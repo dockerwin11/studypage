@@ -1,0 +1,139 @@
+.drop-down-bar-button{
+    display: inline-block;
+}
+
+.drop-down-bar-button button{
+    background-color: hsl(51, 100%, 50%);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: #0000d7;
+}
+
+.drop-down-bar-button a{
+    display: block;
+    color: #0000d7;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.drop-down-bar-button .bar-button-content{
+    display: none;
+    position: absolute;
+    background-color: hsl(51, 100%, 65%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.drop-down-bar-button:hover .bar-button-content{
+    display: block;
+}
+.drop-down-bar-button:hover button{
+    color: green;
+}
+.drop-down-bar-button a:hover{
+    background-color: hsl(51, 100%, 95%);
+}
+.drop-down-bar-button a:active{
+    color: red;
+}
+.bar-button-1{
+    padding: 10px 15px;
+}
+.bar-button-2{
+    padding: 10px 15px;
+}
+
+.language-drop-down-bar-button{
+    display: block;
+}
+
+.language-drop-down-bar-button button{
+    background-color: hsl(271, 76%, 53%);   
+    border: none;
+    font-size: 5px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.language-drop-down-bar-button a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.language-drop-down-bar-button .language-bar-button-content{
+    display: none;
+    position: absolute;
+    background-color: hsl(271, 76%, 69%);
+    max-width: 45px;
+    padding: 7px 7px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.language-drop-down-bar-button:hover .language-bar-button-content{
+    display: block;
+}
+.language-drop-down-bar-button:hover button{
+    background-color: hsl(271, 76%, 39%);
+}
+.language-drop-down-bar-button a:hover{
+color:#ffd900;
+
+}
+
+.language-drop-down-bar-button a:active{
+    color:#69fca6;
+ }
+
+.language-heading-img{
+    padding-top: 5px;
+    width: 35px;
+}
+
+
+
+.language-drop-down-bar-button-EN{
+    display: inline-block;
+}
+
+.language-drop-down-bar-button-EN button{
+    background-color: hsl(271, 76%, 53%);   
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.language-drop-down-bar-button-EN a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.language-drop-down-bar-button-EN .language-bar-button-content-EN{
+    display: none;
+    position: absolute;
+    background-color: hsl(271, 76%, 69%);
+    max-width: 45px;
+    padding: 9px 9px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.language-drop-down-bar-button-EN:hover .language-bar-button-content-EN{
+    display: block;
+}
+.language-drop-down-bar-button-EN:hover button{
+    background-color: hsl(271, 76%, 39%);
+}
+.language-drop-down-bar-button-EN a:hover{
+color:#ffd900;
+
+}
+
+.language-drop-down-bar-button-EN a:active{
+    color:#69fca6;
+}

@@ -1,0 +1,245 @@
+body {
+  background-color: blueviolet;
+}
+
+.main_footer {
+  background-color:#FFA500;
+  clear:both;
+  text-align:left;
+  padding-top: 20px;
+}
+
+.main-footer-text{
+  margin-left: 10px;
+
+}
+
+.main_title{
+background-color:#FFA500;
+text-align:center;
+height: 60px;
+}
+
+.H1-Main-Title{
+max-height: 19px;
+}
+
+.navbar-ul{
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-around;
+background-color:#ffd900;
+height: 20px;
+
+}
+.bar-button a{
+flex:1;
+
+}
+
+.bar-button{
+text-decoration: none;
+}
+
+
+.navbar-ul a:hover{
+color: green;
+}
+
+.navbar-ul a{
+color: #0000d7;
+}
+
+.navbar-ul a:active{
+color: red;
+}
+
+.navbar-ul-tc a:hover{
+color: green;
+}
+
+.navbar-ul-tc a{
+color: #0000d7;
+}
+
+.navbar-ul-tc a:active{
+color: red;
+}
+
+.navbar-ul-sc a:hover{
+color: green;
+}
+
+.navbar-ul-sc a{
+color: #0000d7;
+}
+
+.navbar-ul-sc a:active{
+color: red;
+}
+
+
+.navbar-ul-tc{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color:#ffd900;
+  height: 30px;
+  margin-top: 30px;
+  
+}
+.bar-button-tc a{
+  flex:1;
+}
+
+.bar-button-tc{
+  text-decoration: none;
+}
+
+.navbar-ul-sc{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color:#ffd900;
+  height: 30px;
+  margin-top: 30px;
+  
+}
+.bar-button-sc a{
+  flex:1;
+}
+
+.bar-button-sc{
+  text-decoration: none;
+}
+
+.main_footer_images{
+display: flex;
+flex-wrap: nowrap;
+justify-content: left;
+margin-top: 20px;
+padding-bottom: 20px;
+
+}
+.footer_image img{
+flex: 1;
+max-width: 88px;
+max-height: 31px;
+margin-left: 10px;
+}
+#footer_image_special_logo img{
+max-width: 106px;
+background-color: white;
+}
+
+.paragraph{
+text-align: left;
+border: solid #228cb6;
+color:#ffd900;
+background-color: #228cb6;
+font-weight: bold;
+padding: 5px 20px;
+}
+
+.language-bar{
+display: flex;
+flex-wrap: nowrap;
+float: right;
+margin-right: 0px;
+}
+
+.language{
+font-size: 28px;
+margin-bottom: 3px;
+}
+
+.language-EN{
+font-size: 25px;
+margin-bottom: 3px;
+}
+
+.heading-img{
+width: 55px;
+margin-bottom: -15px;
+padding-right: 15px;
+}
+
+.boat-heading{
+text-decoration: none;
+}
+
+.h1-heading{
+font-size: 2.125rem;
+font-weight: bold;
+color: #ffd900;
+}
+
+.h1-heading:hover{
+  color: white;
+}
+
+.h1-heading:active{
+  color: red;
+}
+
+.sitemap-heading-img-off{
+  display: block;
+  cursor: pointer;
+  width: 35px;
+}
+
+.sitemap-heading-img-on{
+  display: none;
+  cursor: pointer;   
+  width: 35px;
+}
+
+.sitemap-heading-img:hover .sitemap-heading-img-off { 
+  display: none;
+  cursor: pointer;
+  width: 35px;
+} 
+
+.sitemap-heading-img:hover .sitemap-heading-img-on { 
+  display: block;
+  cursor: pointer;
+  width: 35px; 
+}  
+
+.navbar{
+  background-color: #228cb6;
+}
+
+.main_header{
+  background-color: #228cb6;
+}
+
+.sitemap-list{
+  text-align: left; 
+  font-size:2.5rem; 
+  margin-left: 10%;
+  list-style: none;
+}
+
+.sitemap-list li a{
+  text-decoration: none;
+  color:#ffd900;;
+}
+
+.sitemap-list li a:hover{
+color: white;
+}
+
+.sitemap-list li a:active{
+  color:red;
+  }
+
+.sitemap-list li{
+  color:#ffd900;;
+  list-style: none;
+}
+
+.sitemap-list li::before{
+content: "🛥️🌊";
+margin-right: 40px;
+}
