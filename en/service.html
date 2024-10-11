@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/dropdown.css">
   <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <nav class="language-bar">
@@ -45,20 +46,20 @@
     </header>
         
     <nav class="navbar-ul">
-        <a class="bar-button" id="menu-yacht" href="index.html"><strong>Home</strong></a>
+        <a class="bar-button" id="menu-yacht-home" href="index.html"><strong>Home</strong></a>
         <!-- <strong>​主頁</strong> -->
-        <div class="drop-down-bar-button" id="menu-yacht">
+        <div class="drop-down-bar-button">
           <button><strong>Rent yacht</strong></button>
           <div class="bar-button-content">
-            <div class="bar-button-1" id="menu-yacht"><strong>Rent yacht service</strong></div>
+            <div class="bar-button-1" id="menu-yacht-service"><strong>Rent yacht service</strong></div>
             <!-- <strong>遊艇服務</strong> -->  
-            <a class="bar-button-2" id="menu-yacht" href="boat.html"><strong>Rent yacht boat</strong></a>
+            <a class="bar-button-2" id="menu-yacht-boat" href="boat.html"><strong>Rent yacht boat</strong></a>
             <!-- <strong>遊艇出租</strong> -->   
           </div>
         </div>
-        <a class="bar-button" id="menu-yacht" href="about.html"><strong>About us</strong></a>
+        <a class="bar-button" id="menu-yacht-about" href="about.html"><strong>About us</strong></a>
         <!-- <strong>關於我們</strong> -->
-        <a class="bar-button" id="menu-yacht" href="contact.html"><strong>Contact us</strong></a>
+        <a class="bar-button" id="menu-yacht-contact" href="contact.html"><strong>Contact us</strong></a>
         <!-- <strong>查詢</strong> -->
     </nav>
 
@@ -66,7 +67,7 @@
       <div style="padding: 20px 0px 0px 0px;">
         <div>
           <figure id="img-dj-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/dj_onboard.jpg" class="resize">
+            <img src="../content/dj_onboard.jpg" alt="dj_onboard"; class="resize">
             <figcaption>DJ OnBoard Service</figcaption>
           </figure>
           <B>DJ Onboard</B>            
@@ -79,15 +80,20 @@
         </div>
       
         <div style="padding: 347px 0px 0px 400px;">
-          <label for="dj">Number of DJ Onboard (0-10):</label>
-          <input type="number" id="dj" name="dj-number" min="0" max="10" />
+          <form id="dj-form">
+            <label for="dj">Number of DJ Onboard (0-10):</label>
+            <input type="number" id="dj" name="dj-number" min="0" max="10" />            
+            <button type="submit">Submit</button>
+          </form>
+        
+          <script src="../js_script/script.js"></script>          
         </div>
       </div>
 
       <div style="padding: 20px 0px 0px 0px;">
         <div>
           <figure id="img-water-toy" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/water_toy.jpg" class="resize">
+            <img src="../content/water_toy.jpg" alt="water_toy"; class="resize">
             <figcaption>Water Toy Service</figcaption>
           </figure>
           <B>Water Toys Set</B>
@@ -102,15 +108,20 @@
         </div>
 
         <div style="padding: 331px 0px 0px 400px;">
-          <label for="toy">Number of Water Toy (0-100):</label>
-          <input type="number" id="toy" name="toy-number" min="0" max="100" />
+          <form id="toy-form">
+            <label for="toy">Number of Water Toy (0-100):</label>
+            <input type="number" id="toy" name="toy-number" min="0" max="100" />           
+            <button type="submit">Submit</button>
+          </form>
+        
+          <script src="../js_script/script.js"></script>    
         </div>
       </div>
 
       <div style="padding: 20px 0px 0px 0px;">
         <div>
           <figure id="img-catering-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/catering_onboard.jpg" class="resize">
+            <img src="../content/catering_onboard.jpg" alt="catering_onboard" class="resize">
             <figcaption>Catering Onboard Service</figcaption>
           </figure>
           <B>Catering Onboard</B>
@@ -130,7 +141,7 @@
       <div style="padding: 20px 0px 0px 0px;">
         <div>
           <figure id="img-asian-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/asian_style.jpg" class="resize">
+            <img src="../content/asian_style.jpg" alt="asian_style" class="resize">
             <figcaption>Asian Flavors</figcaption>
           </figure>
           <B>Asian Flavors</B>
@@ -154,7 +165,7 @@
       <div style="padding: 20px 0px 0px 0px;">
         <div>
           <figure id="img-mediterranean-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/mediterranean_style.png" class="resize">
+            <img src="../content/mediterranean_style.png" alt="mediterranean_style" class="resize">
             <figcaption>Mediterranean Style</figcaption>
           </figure>
           <B>Mediterranean Style</B>
@@ -178,7 +189,7 @@
       <div style="padding: 20px 0px 20px 0px;">
         <div>
           <figure id="img-continental-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/continental_style.jpg" class="resize">
+            <img src="../content/continental_style.jpg" alt="continental_style" class="resize">
             <figcaption>Continental Style</figcaption>            
           </figure>
           <B>Continental Style</B>
