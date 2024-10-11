@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Please input name"/>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="3" required/> 
+        </div> 
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="tester@example.com" /> 
+        </div> 
+        <div>
+            <label for="textarea">Textarea</label>
+            <input type="textarea" name="textarea" id="textarea" width="10" height="10" disabled/> 
+        </div> 
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <br>
+    <form>
+        <label for="product">Product</label>
+        <select name="product" id="product">
+            <option value="iphone">iphone</option>
+            <option value="samsung" selected>samsung</option>
+            <option value="nokia">nokia</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <br>
+    <form>
+        <label for="html">
+        <input type="checkbox" name="web" id="html" value="html" />HTML</label>
+        <label for="css">
+        <input type="checkbox" name="web" id="css" value="css" checked/>CSS</label>
+    </form>
+
+    <hr>
+    <br>
+    <form>
+        <label for="small">
+        <input type="radio" name="size" id="small" value="small" />small</label>
+        <label for="medium">
+        <input type="radio" name="size" id="medium" value="medium" checked/>medium</label>
+        <input for="large">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="enter your message to cs"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+    <br>
+    <form>
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color id="color" />
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" />
+        </div>
+        <div>
+            <label for="time">time</label>
+            <input type="time" name="time" id="time" />
+        </div>
+
+        <div>
+            <label for="week">week</label>
+            <input type="week" name="week" id="week"/>
+        </div>
+
+        <div>
+            <label for="month">month</label>
+            <input type="month" name="month" id="month" />
+        </div>
+        <div>
+            <label for="range">range</label>
+            <input type="range" name="range" id="range" min="0" max="100" step="10" value="50" />
+        </div>
+
+        <div>
+            <label for="url">url</label>
+            <input type="url" name="url" id="url" />
+        </div>
+
+        <label for="lang">Programming Language</label>
+        <input list="Language" id="lang" name="lang" />
+        <datalist id="Language">
+            <option value="Python"></option>
+            <option value="Java"></option>
+            <option value="C++"></option>
+            <option value="JavaScript"></option>
+        </datalist>
+            
+        
+
+        <div>
+            <label for="range1">range</label>
+            <input type="range" list="range2" id="range1" name="range" min="0" max="100"></input>
+            <datalist id="range2">
+                <option value="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option> 
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
