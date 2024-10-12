@@ -13,12 +13,24 @@
   <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
+  <style>
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  </style>
+
   <nav class="language-bar">
-    <div class="sitemap-heading-img">
+    <div class="sitemap-heading-img" >
       <a href="sitemap.html" class="sitemap-heading" title="sitemap">
-      <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off">
-      <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"></a>
+      <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off" >
+      <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on" ></a>
     </div>  
     
     <div class="language-drop-down-bar-button">
@@ -33,6 +45,10 @@
     </div>
   </nav>
 
+  <video id="myVideo" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="../video/rain.mp4" type="video/mp4">
+  </video>
+
   <nav>
     <a href="../index.html" class="boat-heading" title="Home">
         <img src="../image/boat.png" alt="The world of ERB Yachting" class="heading-img">
@@ -41,7 +57,7 @@
   </nav>
 
   <div id="main-container" style="width:100%">
-    <header id="main-header" class="main-title">
+    <header class="main-title">
       <h1 class="H1-Main-Title">Service</h1>
     </header>
         
@@ -64,7 +80,7 @@
     </nav>
 
     <div id="service-container" style="width:100%; display: grid; ">
-      <div style="padding: 20px 0px 0px 0px;">
+      <div style="padding: 110px 0px 0px 0px;">
         <div>
           <figure id="img-dj-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/dj_onboard.jpg" alt="dj_onboard"; class="resize">
@@ -114,7 +130,6 @@
             <button type="submit">Submit</button>
           </form>
         
-          <script src="../js_script/script.js"></script>    
         </div>
       </div>
 
@@ -129,12 +144,15 @@
             Immerse yourself in a culinary journey with our onboard catering service.
             Our yacht buffet experience is bursting with energy, aromas, and flavors, transporting you to the world's local markets.
             Focusing on both Asian and Western cuisine, our diverse menu offers something for every palate. 
-         </p>
+          </p>
         </div>
 
         <div style="padding: 348px 0px 0px 400px;">
-          <label for="catering">Number of Catering (0-100):</label>
-          <input type="number" id="catering" name="catering-number" min="0" max="100" />
+          <form id="catering-form">
+            <label for="catering">Number of Catering (0-100):</label>
+            <input type="number" id="catering" name="catering-number" min="0" max="100" />
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
       
@@ -157,8 +175,11 @@
         </div>
 
         <div style="padding: 258px 0px 0px 400px;">
-          <label for="asian">Number of Asian Flavors Set (0-100):</label>
-          <input type="number" id="asian" name="asian-number" min="0" max="100" />
+          <form id="asian-form">
+            <label for="asian">Number of Asian Flavors Set (0-100):</label>
+            <input type="number" id="asian" name="asian-number" min="0" max="100" />
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
      
@@ -181,8 +202,12 @@
         </div>
 
         <div style="padding: 258px 0px 0px 400px;">
-          <label for="medi">Number of Mediterranean Style Set (0-100):</label>
-          <input type="number" id="medi" name="medi-number" min="0" max="100" />
+          <form id="medi-form">
+            <label for="medi">Number of Mediterranean Style Set (0-100):</label>
+            <input type="number" id="medi" name="medi-number" min="0" max="100" />
+            <button type="submit">Submit</button>
+          </form>
+            
         </div>
       </div>
      
@@ -206,8 +231,12 @@
         </div>
 
         <div style="padding: 238px 0px 0px 400px;">
-          <label for="cont">Number of Continental Style Set (0-100):</label>
-          <input type="number" id="cont" name="cont-number" min="0" max="100" />
+          <form id="cont-form">
+            <label for="cont">Number of Continental Style Set (0-100):</label>
+            <input type="number" id="cont" name="cont-number" min="0" max="100" />
+            <button type="submit">Submit</button>
+          </form>
+ 
         </div>
       </div>
     </div>
@@ -221,5 +250,6 @@
       </div>
     </footer>
   </div>
+
 </body>
 </html>
