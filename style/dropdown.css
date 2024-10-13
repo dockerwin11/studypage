@@ -1,62 +1,10 @@
-.drop-down-bar-button{
-    display: inline-block;
-}
-
-.drop-down-bar-button button{
-    background-color: hsl(51, 100%, 70%);
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    color: #0000d7; 
-}
-
-.drop-down-bar-button a{
+.language-heading{
     display: block;
-    color: #0000d7;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
+    width: 40px;
+    height: 40px;
 }
 
-.drop-down-bar-button .bar-button-content{
-    display: none;
-    position: absolute;
-    background-color: hsl(51, 100%, 65%);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
-}
-
-.drop-down-bar-button:hover .bar-button-content{
-    display: block;
-}
-
-.drop-down-bar-button:hover button{
-    color: green;
-}
-
-.drop-down-bar-button a:hover{
-    background-color: hsl(51, 100%, 95%);
-}
-
-.drop-down-bar-button a:active{
-    color: red;
-}
-
-.bar-button-1{
-    padding: 10px 15px;
-}
-
-.bar-button-2{
-    padding: 10px 15px;
-}
-
-.language-drop-down-bar-button{
-    display: block;
-    width: 35px;
-    height: 35px;
-}
-
-.language-drop-down-bar-button button{
+.language-heading button{
     
     border: initial;
     /*font-size: 25px; */
@@ -64,69 +12,128 @@
     /*color: white;*/
     padding-block: initial;
     padding-inline: initial;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
-.language-drop-down-bar-button a{
+.language-heading-content a {
     display: block;
     color: white;
     text-decoration: none;
+    text-align: right;
 }
 
-.language-drop-down-bar-button .language-bar-button-content{
+.language-heading .language-heading-content {
     display: none;
     position: relative;
     background-color: hsl(271, 76%, 69%);
-    max-width: 35px;
+    max-width: 40px;
     padding: 0px 2px 0px 2px;
     /*box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);*/
 }
 
-.language-drop-down-bar-button:hover .language-bar-button-content{
+.language-heading:hover .language-heading-content {
     display: block;
 }
 
-/*
-.language-drop-down-bar-button:hover button{
-    background-color: hsl(271, 76%, 39%);
-}
-*/
-
-.language-drop-down-bar-button a:hover{
+.language-heading-content a:hover {
     color:#ffd900;
-
 }
 
-.language-drop-down-bar-button a:active{
+.language-heading-content a:active {
     color:#69fca6;
  }
 
-.language-heading-img-off{
-    /*padding-top: 5px;*/
+.language-heading-img-off {
     display: block;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
 
-.language-heading-img-on{
-    /*padding-top: 5px;*/
+.language-heading-img-on {
     display: none;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
 
-.language-drop-down-bar-button:hover .language-heading-img-off{
+.language-heading-button:hover .language-heading-img-off {
     display: none;
-    height: 35px;   
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
 
-.language-drop-down-bar-button:hover .language-heading-img-on{
+.language-heading-button:hover .language-heading-img-on {
     display: block;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
+
+.menu-button {
+    padding: 0px 230px 0px 20px;
+    cursor: pointer;
+}
+
+.menu-button-1 {
+    padding: 0px 10px 0px 20px;
+    color: #ffd900;
+}
+
+.menu-drop-down-button {
+    display: inline-block;
+    padding: 0px 300px 0px 10px;
+}
+
+.menu-drop-down-button .menu-drop-down-button-content {
+    display: none;
+    position: absolute;
+    /* background-color: #ffd900; */
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.menu-drop-down-button:hover .menu-drop-down-button-content {
+    display: block;
+}
+
+.menu-drop-down-button button {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    color: #ffd900;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu-drop-down-button:hover button {
+    color: white;
+}
+
+.menu-drop-down-button a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-drop-down-button a:hover {
+    color: white;
+}
+
+.menu-drop-down-button a:active {
+    color: #69fca6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .language-drop-down-bar-button-EN{
@@ -160,9 +167,11 @@
 .language-drop-down-bar-button-EN:hover .language-bar-button-content-EN{
     display: block;
 }
+
 .language-drop-down-bar-button-EN:hover button{
     background-color: hsl(271, 76%, 39%);
 }
+
 .language-drop-down-bar-button-EN a:hover{
 color:#ffd900;
 
@@ -171,3 +180,6 @@ color:#ffd900;
 .language-drop-down-bar-button-EN a:active{
     color:#69fca6;
 }
+
+
+
