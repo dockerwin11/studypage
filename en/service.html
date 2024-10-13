@@ -15,72 +15,64 @@
 </head>
 
 <body>
-  <style>
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
-  </style>
-
-  <nav class="language-bar">
-    <div class="sitemap-heading-img" >
-      <a href="sitemap.html" class="sitemap-heading" title="sitemap">
-      <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off" >
-      <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on" ></a>
-    </div>  
-    
-    <div class="language-drop-down-bar-button">
-      <button title="language">
-        <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off">
-        <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on">
-      </button>
-      <div class="language-bar-button-content">
-        <div class="language"><a href="../tc/service.html" title="繁">繁</a></div>
-        <div class="language"><a href="../sc/service.html" title="簡">簡</a></div>
-      </div>
-    </div>
-  </nav>
-
-  <video id="myVideo" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="../video/rain.mp4" type="video/mp4">
-  </video>
-
-  <nav>
-    <a href="../index.html" class="boat-heading" title="Home">
-        <img src="../image/boat.png" alt="The world of ERB Yachting" class="heading-img">
-        <span class="h1-heading">The world of ERB Yachting</span>
-    </a>
-  </nav>
-
   <div id="main-container" style="width:100%">
-    <header class="main-title">
-      <h1 class="H1-Main-Title">Service</h1>
-    </header>
-        
-    <nav class="navbar-ul">
-        <a class="bar-button" id="menu-yacht-home" href="index.html"><strong>Home</strong></a>
-        <!-- <strong>​主頁</strong> -->
-        <div class="drop-down-bar-button">
-          <button><strong>Rent yacht</strong></button>
-          <div class="bar-button-content">
-            <div class="bar-button-1" id="menu-yacht-service"><strong>Rent yacht service</strong></div>
-            <!-- <strong>遊艇服務</strong> -->  
-            <a class="bar-button-2" id="menu-yacht-boat" href="boat.html"><strong>Rent yacht boat</strong></a>
-            <!-- <strong>遊艇出租</strong> -->   
-          </div>
+
+    <video class="background-video" autoplay="autoplay" muted="muted" loop="loop">
+      <!-- <source src="../video/rain.mp4" type="video/mp4"> -->
+      <source src="../video/Icon_of_the-Seas.mp4" type="video/mp4">
+    </video>
+
+    <nav class="nav-bar">  <!-- language bar to nav bar -->
+      <div>
+        <a href="../index.html" class="boat-heading" title="Home">
+          <img src="../image/boat.png" alt="The world of ERB Yachting" class="boat-heading-img">
+          <span class="boat-heading-h1">The world of ERB Yachting</span>
+        </a>
+      </div>
+
+      <div>
+        <a href="sitemap.html" class="sitemap-heading" title="sitemap">
+        <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off">
+        <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"></a>
+      </div>
+
+      <div class="language-heading"> <!-- language drop down bar button to language heading -->
+        <button class="language-heading-button" title="language-heading-button"> <!-- language to language heading button -->
+          <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off">
+          <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on">
+        </button>
+        <div class="language-heading-content"> <!-- language bar button content to language heading content-->
+          <div class="language-heading-button"><a href="../tc/service.html" title="繁">繁</a></div> <!-- language to language heading button -->
+          <div class="language-heading-button"><a href="../sc/service.html" title="簡">簡</a></div> <!-- language to language heading button -->
         </div>
-        <a class="bar-button" id="menu-yacht-about" href="about.html"><strong>About us</strong></a>
-        <!-- <strong>關於我們</strong> -->
-        <a class="bar-button" id="menu-yacht-contact" href="contact.html"><strong>Contact us</strong></a>
-        <!-- <strong>查詢</strong> -->
+      </div>
+    </nav> <!-- language bar to nav bar -->
+    
+    <header class="main-title">
+      <h1 class="main-title-h1">Service</h1>
+    </header>
+
+    <nav class="nav-menu">
+      <a class="menu-button" id="menu-yacht-home" href="index.html"><strong>Home</strong></a>
+      <!-- <strong>​主頁</strong> -->
+      <div class="menu-drop-down-button">
+        <button><strong>Rent yacht</strong></button>
+
+        <div class="menu-drop-down-button-content"> <!-- bar button content to menu drop down button content -->
+          <div class="menu-button-1" id="menu-yacht-service"><strong>Rent yacht service</strong></div>
+          <!-- <strong>遊艇服務</strong> -->  
+          <a class="menu-button-1" id="menu-yacht-boat" href="boat.html"><strong>Rent yacht boat</strong></a>
+          <!-- <strong>遊艇出租</strong> -->   
+        </div>
+      </div>
+      <a class="menu-button" id="menu-yacht-about" href="about.html"><strong>About us</strong></a>
+      <!-- <strong>關於我們</strong> -->
+      <a class="menu-button" id="menu-yacht-contact" href="contact.html"><strong>Contact us</strong></a>
+      <!-- <strong>查詢</strong> -->
     </nav>
 
-    <div id="service-container" style="width:100%; display: grid; ">
-      <div style="padding: 110px 0px 0px 0px;">
+    <div class="service-container">
+      <div> <!-- dj-onboard -->
         <div>
           <figure id="img-dj-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/dj_onboard.jpg" alt="dj_onboard"; class="resize">
@@ -106,7 +98,7 @@
         </div>
       </div>
 
-      <div style="padding: 20px 0px 0px 0px;">
+      <div style="padding: 20px 0px 0px 0px;"> <!-- water-toy -->
         <div>
           <figure id="img-water-toy" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/water_toy.jpg" alt="water_toy"; class="resize">
@@ -120,20 +112,21 @@
               We also provide fresh towels to ensure your comfort throughout the day. 
               Whether you're exploring underwater wonders or simply basking in the sun, 
               our water toys guarantee moments of fun and unforgettable memories for everyone.
-         </p>
+          </p>
         </div>
 
-        <div style="padding: 331px 0px 0px 400px;">
+        <div style="padding: 331px 0px 0px 400px;"> 
           <form id="toy-form">
             <label for="toy">Number of Water Toy (0-100):</label>
             <input type="number" id="toy" name="toy-number" min="0" max="100" />           
             <button type="submit">Submit</button>
           </form>
         
+          <script src="../js_script/script.js"></script>    
         </div>
       </div>
 
-      <div style="padding: 20px 0px 0px 0px;">
+      <div style="padding: 20px 0px 0px 0px;"> <!-- catering-onboard -->
         <div>
           <figure id="img-catering-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/catering_onboard.jpg" alt="catering_onboard" class="resize">
@@ -148,15 +141,12 @@
         </div>
 
         <div style="padding: 348px 0px 0px 400px;">
-          <form id="catering-form">
-            <label for="catering">Number of Catering (0-100):</label>
-            <input type="number" id="catering" name="catering-number" min="0" max="100" />
-            <button type="submit">Submit</button>
-          </form>
+          <label for="catering">Number of Catering (0-100):</label>
+          <input type="number" id="catering" name="catering-number" min="0" max="100" />
         </div>
       </div>
       
-      <div style="padding: 20px 0px 0px 0px;">
+      <div style="padding: 20px 0px 0px 0px;"> <!-- asian-style -->
         <div>
           <figure id="img-asian-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/asian_style.jpg" alt="asian_style" class="resize">
@@ -175,15 +165,12 @@
         </div>
 
         <div style="padding: 258px 0px 0px 400px;">
-          <form id="asian-form">
-            <label for="asian">Number of Asian Flavors Set (0-100):</label>
-            <input type="number" id="asian" name="asian-number" min="0" max="100" />
-            <button type="submit">Submit</button>
-          </form>
+          <label for="asian">Number of Asian Flavors Set (0-100):</label>
+          <input type="number" id="asian" name="asian-number" min="0" max="100" />
         </div>
       </div>
      
-      <div style="padding: 20px 0px 0px 0px;">
+      <div style="padding: 20px 0px 0px 0px;"> <!-- mediterranean-style -->
         <div>
           <figure id="img-mediterranean-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/mediterranean_style.png" alt="mediterranean_style" class="resize">
@@ -193,25 +180,21 @@
           <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
             <li>Greek Salad</li>
             <li>Spanish Paella</li>
-              <li>Italian Baked Eggplant</li>
-              <li>Moroccan Lamb Stew</li>
-              <li>Turkish Kebab</li>
-              <li>Mediterranean Grilled Fish</li>
-              <li>Sicilian Lemon Cake</li>
+            <li>Italian Baked Eggplant</li>
+            <li>Moroccan Lamb Stew</li>
+            <li>Turkish Kebab</li>
+            <li>Mediterranean Grilled Fish</li>
+            <li>Sicilian Lemon Cake</li>
           </ul>
         </div>
 
         <div style="padding: 258px 0px 0px 400px;">
-          <form id="medi-form">
-            <label for="medi">Number of Mediterranean Style Set (0-100):</label>
-            <input type="number" id="medi" name="medi-number" min="0" max="100" />
-            <button type="submit">Submit</button>
-          </form>
-            
+          <label for="medi">Number of Mediterranean Style Set (0-100):</label>
+          <input type="number" id="medi" name="medi-number" min="0" max="100" />
         </div>
       </div>
      
-      <div style="padding: 20px 0px 20px 0px;">
+      <div style="padding: 20px 0px 20px 0px;"> <!-- continental-style -->
         <div>
           <figure id="img-continental-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
             <img src="../content/continental_style.jpg" alt="continental_style" class="resize">
@@ -231,12 +214,8 @@
         </div>
 
         <div style="padding: 238px 0px 0px 400px;">
-          <form id="cont-form">
-            <label for="cont">Number of Continental Style Set (0-100):</label>
-            <input type="number" id="cont" name="cont-number" min="0" max="100" />
-            <button type="submit">Submit</button>
-          </form>
- 
+          <label for="cont">Number of Continental Style Set (0-100):</label>
+          <input type="number" id="cont" name="cont-number" min="0" max="100" />
         </div>
       </div>
     </div>
@@ -249,7 +228,7 @@
         <div class="footer-image" id="footer-image-special-logo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
       </div>
     </footer>
-  </div>
 
+  </div> <!-- main-container -->
 </body>
 </html>
