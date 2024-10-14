@@ -37,10 +37,10 @@
 const products = [
     { name: "DJ onboard", price: 2500, id: 1, quantity: 1,},
     { name: "water-toy", price: 120, id: 2, quantity: 1,},
-    { name: "catering-onboard", price: 500, id: 3, quantity: 1, },
-    { name: "asian-style", price: 900, id: 4, quantity: 1, },
-    { name: "mediterranean-style", price: 300, id: 5, quantity: 1, },
-    { name: "continental-style", price: 100, id: 6, quantity: 1,},
+    { name: "catering-onboard", price: 1500, id: 3, quantity: 1, },
+    { name: "asian-style", price: 400, id: 4, quantity: 1, },
+    { name: "mediterranean-style", price: 500, id: 5, quantity: 1, },
+    { name: "continental-style", price: 550, id: 6, quantity: 1,},
   ];
   
 let cart = [];
