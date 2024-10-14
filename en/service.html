@@ -17,8 +17,9 @@
 <body>
   <div id="main-container" style="width:100%">
 
-    <video class="background-video" src="../video/icon.mp4" type="video/mp4" autoplay="autoplay" muted="muted" loop="loop">
-      <!-- <source src="../video/rain.mp4" type="video/mp4"> -->
+    <video class="background-video" src="../video/IconOfTheSeas.mp4" type="video/mp4" autoplay="autoplay" muted="muted" loop="loop">
+      <!-- <source src="../video/rain.mp4" type="video/mp4">  
+      <source > -->
     </video>
 
     <nav class="nav-bar">  <!-- language bar to nav bar -->
@@ -70,153 +71,171 @@
       <!-- <strong>查詢</strong> -->
     </nav>
 
-    <div class="service-container">
-      <div> <!-- dj-onboard -->
-        <div>
-          <figure id="img-dj-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/dj_onboard.jpg" alt="dj_onboard"; class="resize">
-            <figcaption>DJ OnBoard Service</figcaption>
-          </figure>
-          <B>DJ Onboard</B>            
-          <p style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal;">
-            Experience the ultimate fusion of music and nature with our DJ on the boat service. 
-            As our lively DJ spins your favorite beats on deck, you'll be surrounded by the stunning backdrop of the sea. 
-            This isn't just a tour; it's a musical voyage that promises to create unforgettable memories. 
-            Dance under the open sky, feel the rhythm of the waves, and let the music take you on a journey like no other.
-          </p>
+    <div>
+      <div class="service-container">
+        <div> <!-- dj-onboard -->
+          <div>
+            <figure id="img-dj-onboard" class="service-img">
+              <img src="../content/dj_onboard.jpg" alt="dj_onboard"; class="resize">
+              <figcaption>DJ OnBoard Service</figcaption>
+            </figure>
+            <B>DJ Onboard</B>            
+            <p style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal;">
+              Experience the ultimate fusion of music and nature with our DJ on the boat service. 
+              As our lively DJ spins your favorite beats on deck, you'll be surrounded by the stunning backdrop of the sea. 
+              This isn't just a tour; it's a musical voyage that promises to create unforgettable memories. 
+              Dance under the open sky, feel the rhythm of the waves, and let the music take you on a journey like no other.
+            </p>
+          </div>
+        
+          <div class="service-1">
+
+            <!-- <form id="dj-form">
+              <label for="dj">Number of DJ Onboard (0-10):</label>
+              <input type="number" id="dj" name="dj-number" min="0" max="10" />        
+              <button type="submit">Submit</button>
+            </form> -->
+
+          </div>
+        </div>
+
+        <div> <!-- water-toy -->
+          <div>
+            <figure id="img-water-toy" class="service-img">
+              <img src="../content/water_toy.jpg" alt="water_toy"; class="resize">
+              <figcaption>Water Toy Service</figcaption>
+            </figure>
+            <B>Water Toys Set</B>
+            <p style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal;"> 
+                Elevate your aquatic adventure with our exclusive add-on option of water toys.
+                Dive into the crystal-clear waters with our top-notch snorkeling equipment, glide across the waves on floating bed,
+                floating board, and enjoy endless laughter with our exciting inflatables. 
+                We also provide fresh towels to ensure your comfort throughout the day. 
+                Whether you're exploring underwater wonders or simply basking in the sun, 
+                our water toys guarantee moments of fun and unforgettable memories for everyone.
+            </p>
+          </div>
+
+          <div class="service-2"> 
+            <!-- <form id="toy-form">
+              <label for="toy">Number of Water Toy (0-100):</label>
+              <input type="number" id="toy" name="toy-number" min="0" max="100" />           
+              <button type="submit">Submit</button>
+            </form> -->
+
+          </div>
+        </div>
+
+        <div> <!-- catering-onboard -->
+          <div>
+            <figure id="img-catering-onboard" class="service-img">
+              <img src="../content/catering_onboard.jpg" alt="catering_onboard" class="resize">
+              <figcaption>Catering Onboard Service</figcaption>
+            </figure>
+            <B>Catering Onboard</B>
+            <p style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal;"> 
+              Immerse yourself in a culinary journey with our onboard catering service.
+              Our yacht buffet experience is bursting with energy, aromas, and flavors, transporting you to the world's local markets.
+              Focusing on both Asian and Western cuisine, our diverse menu offers something for every palate. 
+            </p>
+          </div>
+
+          <div class="service-3">
+            <!-- <label for="catering">Number of Catering (0-100):</label>
+            <input type="number" id="catering" name="catering-number" min="0" max="100" /> -->
+          </div>
+        </div>
+
+        <div> <!-- asian-style -->
+          <div>
+            <figure id="img-asian-style" class="service-img">
+              <img src="../content/asian_style.jpg" alt="asian_style" class="resize">
+              <figcaption>Asian Flavors</figcaption>
+            </figure>
+            <B>Asian Flavors</B>
+            <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
+              <li>Sushi Platter</li>
+              <li>Thai Tom Yum Soup</li>
+              <li>Peking Duck</li>
+              <li>Indian Chicken Curry</li>
+              <li>Korean BBQ</li>
+              <li>Vietnamese Spring Rolls</li>
+              <li>Mapo Tofu</li>
+            </ul>
+          </div>
+
+          <div class="service-4">
+            <!-- <label for="asian">Number of Asian Flavors Set (0-100):</label> -->
+            <!-- <input type="number" id="asian" name="asian-number" min="0" max="100" /> -->
+          </div>
         </div>
       
-        <div style="padding: 347px 0px 0px 400px;">
-          <form id="dj-form">
-            <label for="dj">Number of DJ Onboard (0-10):</label>
-            <input type="number" id="dj" name="dj-number" min="0" max="10" />            
-            <button type="submit">Submit</button>
-          </form>
-        
-          <script src="../js_script/script.js"></script>          
-        </div>
-      </div>
+        <div> <!-- mediterranean-style -->
+          <div>
+            <figure id="img-mediterranean-style" class="service-img">
+              <img src="../content/mediterranean_style.png" alt="mediterranean_style" class="resize">
+              <figcaption>Mediterranean Style</figcaption>
+            </figure>
+            <B>Mediterranean Style</B>
+            <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
+              <li>Greek Salad</li>
+              <li>Spanish Paella</li>
+              <li>Italian Baked Eggplant</li>
+              <li>Moroccan Lamb Stew</li>
+              <li>Turkish Kebab</li>
+              <li>Mediterranean Grilled Fish</li>
+              <li>Sicilian Lemon Cake</li>
+            </ul>
+          </div>
 
-      <div style="padding: 20px 0px 0px 0px;"> <!-- water-toy -->
-        <div>
-          <figure id="img-water-toy" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/water_toy.jpg" alt="water_toy"; class="resize">
-            <figcaption>Water Toy Service</figcaption>
-          </figure>
-          <B>Water Toys Set</B>
-          <p style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal;"> 
-              Elevate your aquatic adventure with our exclusive add-on option of water toys.
-              Dive into the crystal-clear waters with our top-notch snorkeling equipment, glide across the waves on floating bed,
-              floating board, and enjoy endless laughter with our exciting inflatables. 
-              We also provide fresh towels to ensure your comfort throughout the day. 
-              Whether you're exploring underwater wonders or simply basking in the sun, 
-              our water toys guarantee moments of fun and unforgettable memories for everyone.
-          </p>
+          <div class="service-5">
+            <!-- <label for="medi">Number of Mediterranean Style Set (0-100):</label> -->
+            <!-- <input type="number" id="medi" name="medi-number" min="0" max="100" /> -->
+          </div>
         </div>
-
-        <div style="padding: 331px 0px 0px 400px;"> 
-          <form id="toy-form">
-            <label for="toy">Number of Water Toy (0-100):</label>
-            <input type="number" id="toy" name="toy-number" min="0" max="100" />           
-            <button type="submit">Submit</button>
-          </form>
-        
-          <script src="../js_script/script.js"></script>    
-        </div>
-      </div>
-
-      <div style="padding: 20px 0px 0px 0px;"> <!-- catering-onboard -->
-        <div>
-          <figure id="img-catering-onboard" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/catering_onboard.jpg" alt="catering_onboard" class="resize">
-            <figcaption>Catering Onboard Service</figcaption>
-          </figure>
-          <B>Catering Onboard</B>
-          <p style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal;"> 
-            Immerse yourself in a culinary journey with our onboard catering service.
-            Our yacht buffet experience is bursting with energy, aromas, and flavors, transporting you to the world's local markets.
-            Focusing on both Asian and Western cuisine, our diverse menu offers something for every palate. 
-          </p>
-        </div>
-
-        <div style="padding: 348px 0px 0px 400px;">
-          <label for="catering">Number of Catering (0-100):</label>
-          <input type="number" id="catering" name="catering-number" min="0" max="100" />
-        </div>
-      </div>
       
-      <div style="padding: 20px 0px 0px 0px;"> <!-- asian-style -->
-        <div>
-          <figure id="img-asian-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/asian_style.jpg" alt="asian_style" class="resize">
-            <figcaption>Asian Flavors</figcaption>
-          </figure>
-          <B>Asian Flavors</B>
-          <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
-            <li>Sushi Platter</li>
-            <li>Thai Tom Yum Soup</li>
-            <li>Peking Duck</li>
-            <li>Indian Chicken Curry</li>
-            <li>Korean BBQ</li>
-            <li>Vietnamese Spring Rolls</li>
-            <li>Mapo Tofu</li>
-          </ul>
-        </div>
+        <div> <!-- continental-style -->
+          <div>
+            <figure id="img-continental-style" class="service-img">
+              <img src="../content/continental_style.jpg" alt="continental_style" class="resize">
+              <figcaption>Continental Style</figcaption>            
+            </figure>
+            <B>Continental Style</B>
+            <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
+              <li>Continental Style</li>
+              <li>French Onion Soup</li>
+              <li>Caesar Salad</li>
+              <li>Pan-Seared Foie Gras</li>
+              <li>Grilled Ribeye Steak</li>
+              <li>Creamy Mushroom Pasta</li>
+              <li>Chocolate Lava Cake</li>
+              <li>Tiramisu</li>
+            </ul>
+          </div>
 
-        <div style="padding: 258px 0px 0px 400px;">
-          <label for="asian">Number of Asian Flavors Set (0-100):</label>
-          <input type="number" id="asian" name="asian-number" min="0" max="100" />
+          <div class="service-6">
+            <!-- <label for="cont">Number of Continental Style Set (0-100):</label>
+            <input type="number" id="cont" name="cont-number" min="0" max="100" /> -->
+          </div>
         </div>
       </div>
-     
-      <div style="padding: 20px 0px 0px 0px;"> <!-- mediterranean-style -->
-        <div>
-          <figure id="img-mediterranean-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/mediterranean_style.png" alt="mediterranean_style" class="resize">
-            <figcaption>Mediterranean Style</figcaption>
-          </figure>
-          <B>Mediterranean Style</B>
-          <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
-            <li>Greek Salad</li>
-            <li>Spanish Paella</li>
-            <li>Italian Baked Eggplant</li>
-            <li>Moroccan Lamb Stew</li>
-            <li>Turkish Kebab</li>
-            <li>Mediterranean Grilled Fish</li>
-            <li>Sicilian Lemon Cake</li>
-          </ul>
+
+      <div class="invoice-container">
+        <p>Invoice</p>
+        <div class="cart-header">
+          <h3>CART</h3>
+          <p class="noOfItems">0 items</p>
+        </div>
+        <!-- <hr noshade="true" size="1px"></hr> -->
+        <div class="cart-items"></div>
+        <!-- <hr noshade="true" size="1px" /> -->
+        <div class="cart-footer cart-header">
+          <h4>Total</h4>
+          <p class="total">$0</p>
         </div>
 
-        <div style="padding: 258px 0px 0px 400px;">
-          <label for="medi">Number of Mediterranean Style Set (0-100):</label>
-          <input type="number" id="medi" name="medi-number" min="0" max="100" />
-        </div>
       </div>
-     
-      <div style="padding: 20px 0px 20px 0px;"> <!-- continental-style -->
-        <div>
-          <figure id="img-continental-style" style="float:left; margin-inline: 0px; margin-block: 0px; text-align:left;">
-            <img src="../content/continental_style.jpg" alt="continental_style" class="resize">
-            <figcaption>Continental Style</figcaption>            
-          </figure>
-          <B>Continental Style</B>
-          <ul style="margin-inline: 0px; margin-block: 0px; unicode-bidi: normal; padding-inline-start: 0px; padding: 0px 0px 0px 420px;"> 
-            <li>Continental Style</li>
-            <li>French Onion Soup</li>
-            <li>Caesar Salad</li>
-            <li>Pan-Seared Foie Gras</li>
-            <li>Grilled Ribeye Steak</li>
-            <li>Creamy Mushroom Pasta</li>
-            <li>Chocolate Lava Cake</li>
-            <li>Tiramisu</li>
-          </ul>
-        </div>
 
-        <div style="padding: 238px 0px 0px 400px;">
-          <label for="cont">Number of Continental Style Set (0-100):</label>
-          <input type="number" id="cont" name="cont-number" min="0" max="100" />
-        </div>
-      </div>
     </div>
 
     <footer class="main-footer">
@@ -227,7 +246,7 @@
         <div class="footer-image" id="footer-image-special-logo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
       </div>
     </footer>
-
+    <script src="../js_script/script.js"></script>
   </div> <!-- main-container -->
 </body>
 </html>
