@@ -10,10 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
- /*   background-color: coral; */
+   /* background-color: coral; 
     background-image: url(https://picsum.photos/200/300);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background: linear-gradient(to bottom left, lightgreen, darkblue, red);
+
 }
