@@ -8,83 +8,132 @@
     console.log('DJ number:', dj_number);
 }); */
 
-$(document).ready(function() {
-    $('#dj-form').on('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+// $(document).ready(function() {
+//     $('#dj-form').on('submit', function(event) {
+//         event.preventDefault(); // Prevent the default form submission
 
-        // Get the input values
-        let dj_number = $('#dj').val();
-        let df_fee;
+//         // Get the input values
+//         let dj_number = $('#dj').val();
 
-        dj_fee = dj_number * 5;
+//         dj_number = dj_number * 5;
 
-        // Display the values
-        console.log('Thank you for enjoying the service ')
-        console.log('DJ number:', dj_number);
-        console.log('Total amount:', dj_fee)
-    });
+//         // Display the values
+//         console.log('DJ number:', dj_number);
+//     });
 
-    $('#toy-form').on('submit', function(event) {
-        event.preventDefault(); 
+//     $('#toy-form').on('submit', function(event) {
+//         event.preventDefault(); // Prevent the default form submission
 
-        
-        let toy_number = $('#toy').val();
+//         // Get the input values
+//         let toy_number = $('#toy').val();
 
-        toy_number = toy_number * 3;
+//         toy_number = toy_number * 3;
 
-        console.log('toy number:', toy_number);
-    });
+//         // Display the values
+//         console.log('toy number:', toy_number);
+//     });
+// });
 
-    $('#catering-form').on('submit', function(event) {
-        event.preventDefault(); 
+const products = [
+    { name: "DJ onboard", price: 2500, id: 1, quantity: 1,},
+    { name: "water-toy", price: 120, id: 2, quantity: 1,},
+    { name: "catering-onboard", price: 500, id: 3, quantity: 1, },
+    { name: "asian-style", price: 900, id: 4, quantity: 1, },
+    { name: "mediterranean-style", price: 300, id: 5, quantity: 1, },
+    { name: "continental-style", price: 100, id: 6, quantity: 1,},
+  ];
+  
+let cart = [];
 
-        let catering_number = $('#catering').val();
+const productsHTML = products.map(
+    (product) => `<h2 class="product-name">${product.name}</h2><strong>$${product.price}</strong>
+                  <button class="service-button" id=${product.id}>Add to Cart</button>`);
 
-        catering_number = catering_number * 2;
-
-        console.log('catering number:', catering_number);
-    });
-
-    $('#asian-form').on('submit', function(event) {
-        event.preventDefault(); 
-
-        let asian_number = $('#asian').val();
-
-        asian_number = asian_number * 2;
-
-        console.log('asian number:', asian_number);
-   
-   
-    });
-
-    $('#medi-form').on('submit', function(event) {
-        event.preventDefault(); 
-
-        let medi = $('#medi').val();
-
-        medi = medi * 2;
-
-        console.log('medi number:', medi);
-    });
-
-    $('#cont-form').on('submit', function(event) {
-        event.preventDefault(); 
-
-        let cont = $('#cont').val();
-
-        cont = cont * 2;
-
-        console.log('cont number:', cont);
-    });
-});
-
-
-let getJSON = async(url) => {
-    let response = await fetch(url);
-    let JSON = await response.json();
-    console.log(JSON + "\n" + "\n");
-    console.log(JSON.rainfall);
+for (let i = 0; i <= productsHTML.length-1; i++) {
+  const queryname = `.service-${products[i].id}`;
+  const result = document.querySelector(queryname);
+  result.innerHTML = productsHTML[i];
 }
 
+let num = document.querySelectorAll(".service-button").length;
+for (let i = 0; i < num; i++) {
+  document.querySelectorAll(".service-button")[i].addEventListener("click", function (e) {
+    addToCart(products, parseInt(e.target.id));
+  });
+}
 
-getJSON('https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=tc')
+function addToCart(products, id){
+    const product = products.find((product) => product.id === id);
+    const cartProduct = cart.find((product) => product.id === id);
+    if (cartProduct != undefined && product.id == cartProduct.id) {
+      incrItem(id);
+    } else {
+      cart.unshift(product);
+    }
+    updateCart();
+    getTotal(cart);
+};
+
+function incrItem(id) {
+    for (let i = 0; i < cart.length; i++) {
+      if (cart[i] && cart[i].id == id) {
+        cart[i].quantity += 1;
+      }
+    }
+    updateCart();
+    getTotal(cart);
+}
+
+function decrItem(id) {
+    for (let i = 0; i < cart.length; i++) {
+      if (cart[i].id == id && cart[i].quantity > 1) {
+        cart[i].quantity -= 1;
+      }
+    }
+    updateCart();
+    getTotal(cart);
+}
+
+function deleteItem(id) {
+    for (let i = 0; i < cart.length; i++) {
+      if (cart[i].id === id) {
+        cart[i].quantity = 1;
+        cart.splice(i, 1);
+      }
+    }
+    updateCart();
+    getTotal(cart);
+}
+
+function updateCart() {
+  const cartHTML = cart.map(
+    (item) => `<div class="cart-item">
+                <h3>${item.name}</h3>
+                <div class="cart-detail"><div class="mid">
+                    <button onclick={decrItem(${item.id})}>-</button>
+                    <p>${item.quantity}</p>
+                    <button onclick={incrItem(${item.id})}>+</button>
+                </div>
+                <p>$${item.price}</p>
+                <button onclick={deleteItem(${item.id})} class="cart-product" id=${item.id}>D</button></div>
+               </div>`
+);
+
+  const cartItems = document.querySelector(".cart-items");
+  cartItems.innerHTML = cartHTML.join("");
+}
+
+function getTotal(cart) {
+    let { totalItem, cartTotal } = cart.reduce(
+      (total, cartItem) => {
+        total.cartTotal += cartItem.price * cartItem.quantity;
+        total.totalItem += cartItem.quantity;
+        return total;
+      },
+      { totalItem: 0, cartTotal: 0 }
+    );
+    const totalItemsHTML = document.querySelector(".noOfItems");
+    totalItemsHTML.innerHTML = `${totalItem} items`;
+    const totalAmountHTML = document.querySelector(".total");
+    totalAmountHTML.innerHTML = `$${cartTotal}`;
+  }
