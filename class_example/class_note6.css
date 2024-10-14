@@ -1,0 +1,110 @@
+/* universal selector */
+
+* {
+    word-spacing: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* element selector */
+p {
+    color: #55eb14;
+}
+
+/* ID selector */
+#heading {
+    color: blue;
+}
+
+#unique-box {
+    border: 2px solid purple;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* class selector */
+.simply {
+    color: rgb(255,0,247);
+}
+
+.box {
+    background-color: rgb(155, 121, 155);
+}
+
+/* attribute selector */
+input[type="text"] {
+    border: 2px solid #007bff;
+}
+
+/* descendant selector */
+/* element */
+div h2 {
+    color: peru;
+}
+
+ul.list li.highlight {
+    color: red;
+}
+
+ul.list > li {
+    list-style-type: square;
+    margin-left: 170px
+}
+
+/* direct child element */
+div > h2 {
+    color: purple;
+}
+
+/* direct child class */
+.box > .child {
+    color: pink;
+}
+
+/* multiple classes selection within element */
+.inner-box.first-box {
+    color: palevioletred;
+}
+
+/* multiple element */
+
+h5,h6 {
+    color: plum;
+}
+
+/* multiple class */
+.multiple1,.multiple2 {
+    color: powderblue;
+}
+
+/* adjacent sibling selector */
+/* element */
+div + a {
+    color: rosybrown
+}
+
+/* class */
+.link + .box-sibling {
+    background-color: lightgreen;
+}
+
+/* general sibling selector */
+/* class */
+.box ~ .general-sibling {
+    background-color: rgb(205,205,37);
+}
+
+/* element */
+h1 ~ h4 {
+    color: brown;
+}
+
+/* pseudo-class selector */
+.pseudo-class-link:hover {
+    color: #ff5733;
+    text-decoration: underline;
+}
+
+/* pseudo-element selector */
+p::first-letter {
+    text-transform: capitalize;
+}

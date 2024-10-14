@@ -1,0 +1,20 @@
+html, body{
+    border: red 3px solid;
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sporty {
+    color: red;
+}
+
+.casual {
+    color: rgb(81, 81, 128);
+}
+
+.formal {
+    color: brown;
+}
+

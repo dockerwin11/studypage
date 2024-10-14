@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class_note6.css">
+    <title>Document</title>
+</head>
+    <body>
+        <h1 id="heading">ID selector blue</h1>
+        <div class="box" id="unique-box">
+            <h2>element direct child</h2>
+            <h3 class="child">class direct child</h3>
+            <span><h2>element not direct child</h2></span>
+            <span><h3 class="child">class not direct child</h3></span>
+            <p>P element selector green</p>
+            <p class="simply">simply class selector red</p>
+            <div class="inner-box first-box">multiple classes</div>
+            <div class="inner-box">inner box</div>
+            <ul class="list">
+                <li>ul li -element descendant</li>
+                <ul>
+                    <li>ul li - element descendant all levels</li>
+                    <li class="highlight">
+                        ul.list li.highlight - class descendant all level
+                    </li>
+                </ul>
+                <li class="highlight">li.list li.highlight - class descendant</li>
+            </ul>
+            <input type="text" placeholder="attribute selector">
+            <input type="textarea" placeholder="textarea attribute selector">
+            <a href="#" class="link" title="link title">Link with title</a>
+            <div class="box-sibling">class direct sibling</div>
+            <a href="#">element direct sibling a</a>
+            <a href="#" class="pseudo-class-link">pseudo-class selector</a>            
+        </div>
+        <p class="general-sibling">class general sibling</p>
+        <h2 class="general-sibling">class general sibling</h2>
+        <h4>element general sibling</h4>
+        <h5>multiple element selection</h5>
+        <h6>multiple element selection</h6>
+        <p class="multiple1">multiple class selection</p>
+        <p class="multiple2">multiple class selection</p>
+    </body>
+</html>
