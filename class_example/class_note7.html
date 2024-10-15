@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="class_note7.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <p>checkout our <a href="#">latest blog post</a></p>
+    <p>checkout our <a href="post.html">latest blog post</a></p>
+
+    <div>
+        <!-- <i class="fa-brands fa-youtube fa-shake fa-5x" id="mark"></i> -->
+        <i class="fa-brands fa-youtube" id="mark-1"></i>
+    </div>
+    <i class="fa-solid fa-xmark"></i>
+    <i class="fa-regular fa-circle-xmark"></i>
+    <i class="fa-solid fa-check"></i>
+
+    <div class="box box-1">
+        <h3>box 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut placeat tempora eaque officiis laudantium explicabo adipisci ipsum dolorem sunt. Ex architecto at exercitationem unde quidem vero ipsa aliquid esse recusandae!</p>
+    </div>
+    <div class="box box-2">
+        <h3>box 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut placeat tempora eaque officiis laudantium explicabo adipisci ipsum dolorem sunt. Ex architecto at exercitationem unde quidem vero ipsa aliquid esse recusandae!</p>
+    </div>
+    <div class="box box-3">
+        <h3>box 3 </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut placeat tempora eaque officiis laudantium explicabo adipisci ipsum dolorem sunt. Ex architecto at exercitationem unde quidem vero ipsa aliquid esse recusandae!</p>
+    </div>
+<br><br><br><br><br><br>
+    <section class="containera">
+        <div class="boxa boxa-1">static</div>
+        <div class="boxa boxa-2">relative</div>
+        <div class="boxa boxa-3">fixed</div>
+        <div class="boxa boxa-4">sticky</div>
+        <div class="boxa boxa-5">
+            box 5
+            <div class="boxa boxa-6">absolute</div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $('#mark-1').hover(function() {
+                            $(this).addClass('fa-shake');
+                            }, function() {
+                            $(this).removeClass('fa-shake');
+                            });
+    </script>
+</body>
+</html>

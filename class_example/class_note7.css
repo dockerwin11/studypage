@@ -1,0 +1,102 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    word-spacing: 10px;
+    box-sizing: border-box;
+}
+
+/* regular link */
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: purple;
+}
+
+a:focus {
+    color: yellow;
+}
+
+a:visited {
+    color: coral;
+}
+
+#mark-1 {
+    color: red;
+    font-size: 150px;
+}
+
+.fa-check {
+    color: green;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.box {
+    background-color: blue;
+    color: white;
+    padding: 40px 0px 70px;
+    border: 3px solid red;
+    margin: 20px 30px 0px 70px;    
+}
+
+.box-1 {
+    margin: 50px;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+    border-top: 4px solid red;
+    border-bottom: 4px dashed orange;;
+}
+
+.box-2 {
+    width: 50%;
+    border-left: 10px dotted green;
+    border-right: 10px solid yellowgreen;
+}
+
+.box-2 p {
+    width: 50%;
+}
+
+.box-3 {
+    border-radius: 10px 20px 30px 40px;
+    max-width: 800px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
+.boxa {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.boxa-1 {
+    position: static;
+    /* left, right, top, bottom has no effect */
+    left: 30px;
+}
+
+.boxa-2 {
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.boxa-3 {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
