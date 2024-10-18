@@ -332,6 +332,26 @@ color: #69fca6;
   /* border: 2px solid white; */
 }
 
+.service-content table {
+  padding: 10px 0px 20px 0px;
+  width: 450px;
+  border: 2px solid white;
+}
+
+.service-content table td {
+  text-align: left;
+  width: 110px;
+  border: 1px solid white;
+}
+
+.boat {
+  height: 150px;
+  width: 150px;
+  border: 2px solid white;
+}
+
+/* table here */
+
 .service {
   height: 150px;
   /* border: 2px solid white; */
@@ -368,6 +388,25 @@ color: #69fca6;
 
 .service-button:active {
   transform: translateY(2px);
+}
+
+.unit {
+  display: flex;
+  margin-top: 25px;
+  /* border: 2px solid yellow; */
+}
+
+.unit button {
+  width: 25px;
+  height: 25px;
+  /* border: 2px solid yellow; */
+}
+.unit p{
+  width: 40px;
+  height: 20px;
+  padding-top: 2px;
+  padding-left: 5px;
+  border: 2px solid yellow;
 }
 
 /* preview invoice container */
