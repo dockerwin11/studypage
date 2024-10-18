@@ -374,8 +374,8 @@ color: #69fca6;
 
 .payment-button {
   display: flex;
-  padding-top: 650px; 
-  padding-left: 1350px;
+  padding-top: 700px; 
+  padding-left: 1500px;
   /* border: 2px solid yellow; */
 }
 
@@ -425,7 +425,7 @@ background-color: #ffd84d;
 .main-footer {
   
   position: fixed;
-  top: 720px;
+  top: 800px;
   left: 585px;
   /* background-color:#FFA500; */
   /* clear:both; */
