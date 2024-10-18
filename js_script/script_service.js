@@ -68,7 +68,12 @@ let cart = [];
 
 const productsHTML = products.map(
     (product) => `<strong>$${product.price}</strong>
-                  <button class="service-button" id=${product.id}>Add to Cart</button>`);
+                  <button class="service-button" id=${product.id}>Add to Cart</button>
+                  <div class="mid-${product.id} unit">
+                    <button onclick={decrItem(${product.id})}>-</button>
+                    <p>${product.quantity}</p>
+                    <button onclick={incrItem(${product.id})}>+</button>
+                  </div>`);
 
 for (let i = 0; i <= productsHTML.length-1; i++) {
   const queryname = `.service-${products[i].id}`;
@@ -86,6 +91,10 @@ for (let i = 0; i < num; i++) {
 
 document.querySelector(".payment-button-reset").addEventListener("click", (e) => {
   cart = [];
+  for (let i = 1; i <= products.length; i++) {
+    const temp = document.querySelector(".mid-" + i + " p");
+    temp.innerText = 1;
+  }
   updateCart();
   getTotal(cart);
 });
@@ -110,6 +119,8 @@ function incrItem(id) {
   for (let i = 0; i < cart.length; i++) {
     if (cart[i] && cart[i].id == id) {
       cart[i].quantity += 1;
+      const temp = document.querySelector(".mid-" + id + " p");
+      temp.innerText = cart[i].quantity;
     }
   }
   updateCart();
@@ -120,6 +131,8 @@ function decrItem(id) {
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].id == id && cart[i].quantity > 1) {
       cart[i].quantity -= 1;
+      const temp = document.querySelector(".mid-" + id + " p");
+      temp.innerText = cart[i].quantity;
     }
   }
   updateCart();
