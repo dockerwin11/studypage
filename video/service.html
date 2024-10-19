@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERB Yachting</title>
+  <meta name="description" content="ERB Yachting" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="ERB Yachting Group" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="../style/style.css">
+  <!-- <link rel="stylesheet" href="../style/dropdown.css"> -->
+  <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main-container">
+
+    <video class="background-video" controls preload="true" autoplay loop muted>
+      <source src="../video/icon.mp4" type="video/mp4"></source>
+    </video>
+
+    <nav class="nav-bar">  <!-- language bar to nav bar -->
+      <!-- <div> <!-- heading title -->
+        <a href="../index.html" class="boat-heading" title="Home"><img src="../image/boat2.png" alt="The world of ERB Yachting" class="boat-heading-img"></a>
+        <!-- <a href="../index.html" class="boat-heading" title="Home"><span class="boat-heading-h1">The world of ERB Yachting</span></a> -->
+        <a href="../index.html" class="boat-heading boat-heading-h1" title="Home">The world of ERB Yachting</a>
+      <!-- </div> -->
+
+      <div> <!-- site map -->
+        <a href="sitemap.html" class="sitemap-heading" title="sitemap">
+          <!-- <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off"> -->
+          <!-- <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"> -->
+          <i class="fa-solid fa-sitemap" id="mark-1"></i>
+        </a>
+      </div>
+
+      <!-- <div>
+        <i class="fa-brands fa-youtube fa-shake" ></i>
+        <i class="fa-solid fa-language" id="mark-1"></i>
+      </div> -->
+
+      <div class="language-heading"> <!-- language drop down bar button to language heading -->
+        <button class="language-heading-button" title="language-heading-button"> <!-- language to language heading button -->
+          <!-- <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off"> -->
+          <!-- <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on"> -->
+          <i class="fa-solid fa-language" id="mark-2"></i>
+        </button>
+        <div class="language-heading-content"> <!-- language bar button content to language heading content-->
+          <div class="language-heading-button"><a href="../tc/service.html" title="繁">繁</a></div> <!-- language to language heading button -->
+          <div class="language-heading-button"><a href="../sc/service.html" title="簡">簡</a></div> <!-- language to language heading button -->
+        </div>
+      </div>
+
+      <script>
+        $('#mark-1').hover(function() {
+                            $(this).addClass('fa-flip');
+                            }, function() {
+                            $(this).removeClass('fa-flip'); 
+                            });
+        $('#mark-2').hover(function() {
+                            $(this).addClass('fa-flip');
+                            }, function() {
+                            $(this).removeClass('fa-flip'); 
+                            });
+      </script>
+      
+    </nav> <!-- language bar to nav bar -->
+
+    <header class="main-title">
+      <h1 class="main-title-h1">Service</h1>
+    </header>
+
+    <nav class="nav-menu">
+      <a class="menu-button" id="menu-yacht-home" href="index.html"><strong>Home</strong></a>
+      <!-- <strong>​主頁</strong> -->
+      <div class="menu-drop-down-button">
+        <button><strong>Rent yacht</strong></button>
+        <div class="menu-drop-down-button-content"> <!-- bar button content to menu drop down button content -->
+          <div class="menu-button-1" id="menu-yacht-service"><strong>Rent yacht service</strong></div>
+          <!-- <strong>遊艇服務</strong> -->  
+          <a class="menu-button-1" id="menu-yacht-boat" href="boat.html"><strong>Rent yacht boat</strong></a>
+          <!-- <strong>遊艇出租</strong> -->   
+        </div>
+      </div>
+      <a class="menu-button" id="menu-yacht-about" href="about.html"><strong>About us</strong></a>
+      <!-- <strong>關於我們</strong> -->
+      <a class="menu-button" id="menu-yacht-contact" href="contact.html"><strong>Contact us</strong></a>
+      <!-- <strong>查詢</strong> -->
+    </nav>
+
+    <div class="service-container">
+      <div class="service-event"> <!-- dj-onboard -->
+        <div>
+          <figure class="service-img">
+            <img src="../content/dj_onboard.jpg" alt="DJ_onboard"; class="service-img-resize">
+            <figcaption>DJ OnBoard Service</figcaption>
+          </figure>
+        </div>
+        <div class="service-content">
+          <div>
+            <B>DJ Onboard</B>          
+            <p>
+              Experience the ultimate fusion of music and nature with our DJ on the boat service. 
+              As our lively DJ spins your favorite beats on deck, you'll be surrounded by the stunning backdrop of the sea. 
+              This isn't just a tour; it's a musical voyage that promises to create unforgettable memories. 
+              Dance under the open sky, feel the rhythm of the waves, and let the music take you on a journey like no other.
+            </p>
+          </div>
+          <div class="service-1 service"></div>
+        </div>
+      </div>
+
+      <div class="service-event"> <!-- water-toy -->
+        <div>
+          <figure class="service-img">
+            <img src="../content/water_toy.jpg" alt="water_toy"; class="service-img-resize">
+            <figcaption>Water Toy Service</figcaption>
+          </figure>
+        </div>
+        <div class="service-content">
+          <div>
+            <B>Water Toys Set</B>
+            <p> 
+                Elevate your aquatic adventure with our exclusive add-on option of water toys.
+                Dive into the crystal-clear waters with our top-notch snorkeling equipment, glide across the waves on floating bed,
+                floating board, and enjoy endless laughter with our exciting inflatables. 
+                We also provide fresh towels to ensure your comfort throughout the day. 
+                Whether you're exploring underwater wonders or simply basking in the sun, 
+                our water toys guarantee moments of fun and unforgettable memories for everyone.
+            </p>
+          </div>
+          <div class="service-2 service"></div>
+        </div>
+      </div>
+
+      <div class="service-event"> <!-- catering-onboard -->
+        <div>
+          <figure id="img-catering-onboard" class="service-img">
+            <img src="../content/catering_onboard.jpg" alt="catering_onboard" class="service-img-resize">
+            <figcaption>Catering Onboard Service</figcaption>
+          </figure>
+        </div>
+        <div class="service-content">
+          <div>
+            <B>Catering Onboard</B>
+            <p> 
+              Immerse yourself in a culinary journey with our onboard catering service.
+              Our yacht buffet experience is bursting with energy, aromas, and flavors, transporting you to the world's local markets.
+              Focusing on both Asian and Western cuisine, our diverse menu offers something for every palate. 
+            </p>
+          </div>
+          <div class="service-3 service"></div>
+        </div>
+      </div>
+
+      <div class="service-event"> <!-- asian-style -->
+        <div>
+          <figure id="img-asian-style" class="service-img">
+            <img src="../content/asian_style.jpg" alt="asian_style" class="service-img-resize">
+            <figcaption>Asian Flavors</figcaption>
+          </figure>
+        </div>
+        <div class="service-content">
+          <div>
+            <B>Asian Flavors</B>
+            <ul> 
+              <li>Sushi Platter</li>
+              <li>Thai Tom Yum Soup</li>
+              <li>Peking Duck</li>
+              <li>Indian Chicken Curry</li>
+              <li>Korean BBQ</li>
+              <li>Vietnamese Spring Rolls</li>
+              <li>Mapo Tofu</li>
+            </ul>
+          </div>
+          <div class="service-4 service"></div>
+        </div>
+      </div>
+
+      <div class="service-event"> <!-- mediterranean-style -->
+        <div>
+          <figure id="img-mediterranean-style" class="service-img">
+            <img src="../content/mediterranean_style.png" alt="mediterranean_style" class="service-img-resize">
+            <figcaption>Mediterranean Style</figcaption>
+          </figure>
+        </div>
+        <div class="service-content">
+          <div>
+            <B>Mediterranean Style</B>
+            <ul> 
+              <li>Greek Salad</li>
+              <li>Spanish Paella</li>
+              <li>Italian Baked Eggplant</li>
+              <li>Moroccan Lamb Stew</li>
+              <li>Turkish Kebab</li>
+              <li>Mediterranean Grilled Fish</li>
+              <li>Sicilian Lemon Cake</li>
+            </ul>
+          </div>
+          <div class="service-5 service"></div>
+        </div>
+      </div>
+
+      <div class="service-event"> <!-- continental-style -->
+        <div>
+          <figure id="img-continental-style" class="service-img">
+            <img src="../content/continental_style.jpg" alt="continental_style" class="service-img-resize">
+            <figcaption>Continental Style</figcaption>            
+          </figure>
+        </div>
+        <div class="service-content">
+          <div>
+            <B>Continental Style</B>
+            <ul> 
+              <li>Continental Style</li>
+              <li>French Onion Soup</li>
+              <li>Caesar Salad</li>
+              <li>Pan-Seared Foie Gras</li>
+              <li>Grilled Ribeye Steak</li>
+              <li>Creamy Mushroom Pasta</li>
+              <li>Chocolate Lava Cake</li>
+              <li>Tiramisu</li>
+            </ul>
+          </div>
+          <div class="service-6 service"></div>
+        </div>        
+      </div>
+    </div> <!-- service container -->
+
+    <!-- <div class="invoice-container">
+          <p>Invoice</p>
+          <div class="cart-header">
+            <h3>CART</h3>
+            <p class="noOfItems">0 items</p>
+          </div> -->
+          <!-- <hr noshade="true" size="1px" /> -->
+          <!-- <div class="cart-items"></div> -->
+          <!-- <hr noshade="true" size="1px" /> -->
+          <!-- <div class="cart-footer cart-header">
+            <h4>Total</h4>
+            <p class="total">$0</p>
+          </div>
+    </div> -->
+
+    <div class="payment-button">
+      <button class="payment-button-reset">Reset</button>
+      <button onclick="openTab()" class="payment-button-paid">Payment</button>
+    </div>
+
+    <script>
+      function openTab() {
+        window.open("invoice.html", "_blank");
+      }
+    </script>
+
+    <footer class="main-footer">
+      <strong class="main-footer-text">©2024 by ERB Yachting Group. All Rights Reserved.</strong>
+      <div class="main-footer-images">
+        <div class="footer-image"><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"><img src="../image/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a></div>
+        <div class="footer-image"><a href="https://www.digitalpolicy.gov.hk/en/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme"><img src="../image/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme"></a></div>
+        <div class="footer-image hklogo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
+      </div>
+    </footer>
+    
+    <script src="../js_script/script_service.js"></script>
+
+  </div> <!-- main-container -->
+</body>
+</html>
