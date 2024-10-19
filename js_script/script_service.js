@@ -90,6 +90,10 @@ for (let i = 0; i < num; i++) {
 
 
 document.querySelector(".payment-button-reset").addEventListener("click", (e) => {
+  for (let i = 0; i < cart.length; i++) {
+        cart[i].quantity = 1;
+  }
+    
   cart = [];
   for (let i = 1; i <= products.length; i++) {
     const temp = document.querySelector(".mid-" + i + " p");
