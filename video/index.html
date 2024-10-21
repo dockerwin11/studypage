@@ -1,269 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ERB Yachting</title>
-  <meta name="description" content="ERB Yachting" />
-  <meta name="keywords" content="HTML, CSS, JavaScript" />
-  <meta name="author" content="ERB Yachting Group" />
-  <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="../style/style.css">
-  <!-- <link rel="stylesheet" href="../style/dropdown.css"> -->
-  <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERB Yachting</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/dropdown.css">
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
 
-<body>
-  <div class="main-container">
 
-    <video class="background-video" controls preload="true" autoplay loop muted>
-      <source src="../video/icon_2.mp4" type="video/mp4"></source>
-    </video>
-
-    <nav class="nav-bar">  <!-- language bar to nav bar -->
-      <!-- <div> <!-- heading title -->
-        <a href="../index.html" class="boat-heading" title="Home"><img src="../image/boat2.png" alt="The world of ERB Yachting" class="boat-heading-img"></a>
-        <!-- <a href="../index.html" class="boat-heading" title="Home"><span class="boat-heading-h1">The world of ERB Yachting</span></a> -->
-        <a href="../index.html" class="boat-heading boat-heading-h1" title="Home">The world of ERB Yachting</a>
-      <!-- </div> -->
-
-      <div> <!-- site map -->
-        <a href="sitemap.html" class="sitemap-heading" title="sitemap">
-          <!-- <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off"> -->
-          <!-- <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"> -->
-          <i class="fa-solid fa-sitemap" id="mark-1"></i>
-        </a>
-      </div>
-
-      <!-- <div>
-        <i class="fa-brands fa-youtube fa-shake" ></i>
-        <i class="fa-solid fa-language" id="mark-1"></i>
-      </div> -->
-
-      <div class="language-heading"> <!-- language drop down bar button to language heading -->
-        <button class="language-heading-button" title="language-heading-button"> <!-- language to language heading button -->
-          <!-- <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off"> -->
-          <!-- <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on"> -->
-          <i class="fa-solid fa-language" id="mark-2"></i>
-        </button>
-        <div class="language-heading-content"> <!-- language bar button content to language heading content-->
-          <div class="language-heading-button"><a href="../tc/service.html" title="繁">繁</a></div> <!-- language to language heading button -->
-          <div class="language-heading-button"><a href="../sc/service.html" title="簡">簡</a></div> <!-- language to language heading button -->
-        </div>
-      </div>
-
-      <script>
-        $('#mark-1').hover(function() {
-                            $(this).addClass('fa-flip');
-                            }, function() {
-                            $(this).removeClass('fa-flip'); 
-                            });
-        $('#mark-2').hover(function() {
-                            $(this).addClass('fa-flip');
-                            }, function() {
-                            $(this).removeClass('fa-flip'); 
-                            });
-      </script>
-      
-    </nav> <!-- language bar to nav bar -->
-
-    <header class="main-title">
-      <h1 class="main-title-h1">Home</h1>
-    </header>
-
-    <nav class="nav-menu">
-      <a class="menu-button" id="menu-yacht-home" href="index.html"><strong>Home</strong></a>
-      <!-- <strong>​主頁</strong> -->
-      <div class="menu-drop-down-button">
-        <button><strong>Rent yacht</strong></button>
-        <div class="menu-drop-down-button-content"> <!-- bar button content to menu drop down button content -->
-          <a class="menu-button-1" id="menu-yacht-service" href="service.html"><strong>Rent yacht service</strong></a>
-          <!-- <strong>遊艇服務</strong> -->  
-          <a class="menu-button-1" id="menu-yacht-boat" href="boat.html"><strong>Rent yacht boat</strong></a>
-          <!-- <strong>遊艇出租</strong> -->   
-        </div>
-      </div>
-      <a class="menu-button" id="menu-yacht-about" href="about.html"><strong>About us</strong></a>
-      <!-- <strong>關於我們</strong> -->
-      <a class="menu-button" id="menu-yacht-contact" href="contact.html"><strong>Contact us</strong></a>
-      <!-- <strong>查詢</strong> -->
-    </nav>
-
-   <!-- <div class="service-container"> -->
-      <style>
-        /* * {box-sizing: border-box} */
-        /* body {font-family: Verdana, sans-serif; margin:0} */
-        .mySlides {display: none}
-        img {vertical-align: middle; height: 600px}
-        
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1100px;
-          position: relative;
-          /* margin: auto; */
-          left: 230px;
-          top: 180px;
-          border: 2px solid yellow;
-        }
-        
-        /* Next & previous buttons */
-        .prev, .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-          border: 2px solid yellow;
-        }
-        
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
-        }
-        
-        /* Caption text */
-        .text {
-          color: #f2f2f2;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        
-        .active, .dot:hover {
-          background-color: #717171;
-        }
-        
-        /* Fading animation */
-        .fade {
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        }
-        </style>
-      
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="../content/boat/Motor boat/42 fly/42fly-base.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="../content/boat/Motor boat/42 fly/42fly_beauty_bridge_20_117-2k.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="../content/boat/Motor boat/42 fly/42GrandeCoupe_lifestyle_20_0863-2k.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-
-        <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
-    <!-- </div> --> <!-- service container -->
-
-   
-
-    <footer class="main-footer">
-      <strong class="main-footer-text">©2024 by ERB Yachting Group. All Rights Reserved.</strong>
-      <div class="main-footer-images">
-        <div class="footer-image"><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"><img src="../image/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a></div>
-        <div class="footer-image"><a href="https://www.digitalpolicy.gov.hk/en/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme"><img src="../image/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme"></a></div>
-        <div class="footer-image hklogo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
-      </div>
-    </footer>
+<style>
+.slider{
+    position: relative;
+    width:100%;
+    margin: auto;
+    overflow: hidden;
     
-    <script src="../js_script/script_service.js"></script>
+}
+.slider img{
+    max-width:  800px;
+    display: none;
+    margin: auto;
+}
 
-  </div> <!-- main-container -->
+.slide{
+  border: 5px solid white;
+}
+
+.slide:hover{
+  cursor: pointer;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsl(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade{
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}
+.slider button:hover{
+    background-color: hsla(0, 0%, 50%, 0.5);
+}
+
+
+.lb-closeContainer {
+  position: absolute;
+  top: -30px;
+  right: 28px;
+}
+
+</style>
+</head>
+<body>
+  <div>
+      <video class="background-video"  autoplay muted loop style="margin: auto;">
+        <source src="../video/background-video-1.mp4" type="video/mp4">
+      </video>
+      <!-- <source src="../video/rain.mp4" type="video/mp4"> -->
+
+   <!-- <strong>網站地圖</strong> -->
+  <div class="language-bar">
+    <span><a href="sitemap.html" class="sitemap-heading" title="sitemap"><span><img src="../image/sitemap.png" alt="sitemap" class="sitemap-heading-img"></span></a></span>
+    <div class="language-drop-down-bar-button">
+      <button><img src="../image/language.png" alt="language" class="language-heading-img"></button>
+      <div class="language-bar-button-content">
+      <div class="language"><a href="../tc/index.html" title="繁">繁</a></div>
+      <div class="language"><a href="../sc/index.html" title="簡">簡</a></div>
+    </div>
+  </div>
+  </div>
+ <span><a href="../index.html" class="boat-heading"><span><img src="../image/boat2.png" alt="The world of ERB Yachting" class="heading-img"><span class="h1-heading">The world of ERB Yachting</span></span></a></span>
+  <div id="main_container" style="width:100%">
+    <div id="main_header" class="main_title">
+        <h1 class="H1-Main-Title">Home</h1>
+        <div class="navbar">
+          <div class="navbar-ul">
+              <strong class="bar-button" id="menu_yacht">Home</strong>
+              <!-- <strong>​主頁</strong> -->
+              <div class="drop-down-bar-button" id="menu_yacht">
+                <button onclick="main_en()" class="bar-main-button"><strong>Rent yacht</strong></button>
+                <div class="bar-button-content">
+                  <a class="bar-button-1" id="menu_yacht" href="service.html"><strong>Rent yacht service</strong></a>
+                  <!-- <strong>遊艇服務</strong> -->  
+                  <a class="bar-button-2" id="menu_yacht" href="boat.html"><strong>Rent yacht boat</strong></a>
+                  <!-- <strong>遊艇船</strong> -->  
+                </div>
+            </div>
+              <!-- <strong>遊艇出租</strong> -->             
+              <a class="bar-button" id="menu_yacht" href="about.html"><strong>About us</strong></a>
+               <!-- <strong>關於我們</strong> -->
+               <a class="bar-button" id="menu_yacht" href="contact.html"><strong>Contact us</strong></a>
+               <!-- <strong>查詢</strong> -->
+          </div>
+          
+          <!-- <video width="100%" height="100%" autoplay="autoplay" muted loop>
+            <source src="video/AFA-masthead.mp4" type="video/mp4">
+          </video> -->
+
+
+
+          <div class="slider">
+            <div class="slides">
+                <img onclick="en_cover1()" class="slide" src="../image/cover1.png" alt="38 Surf">
+                <img onclick="en_cover2()" class="slide" src="../image/cover2.png" alt="Regal LS4">
+                <img onclick="en_cover3()" class="slide" src="../image/cover3.png" alt="Regal 42 Fly">
+                <img onclick="en_cover4()" class="slide" src="../image/cover4.png" alt="Regal 38 Grande">
+                <img onclick="en_cover5()" class="slide" src="../image/cover5.png" alt="Beneteau Oceanis 60">
+                <img onclick="en_cover6()" class="slide" src="../image/cover6.png" alt="Bali 5.8">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+        <!-- <img src="content/image1.jpg" width="100%" height="100%"> -->
+        <!-- <img src="/ship/sail/image1.jpg" width="100%" height="30%"> -->
+  </div>
+          <div class="main_footer">
+         <strong class="main-footer-text">©Copyright 2024 ERB Yachting All Rights Reserved.</strong>
+         <div class="main_footer_images">
+          <div class="footer_image"><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"><img src="../image/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a></div>
+          <div class="footer_image"><a href="https://www.digitalpolicy.gov.hk/en/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme"><img src="../image/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme"></a></div>
+          <div class="footer_image" id="footer_image_special_logo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+<script>
+  // IMAGE SLIDER
+const slides = document.querySelectorAll(".slides img")
+let slideIndex = 0;
+let intervalID = null;
+//initializeSlider();
+document.addEventListener("DOMContentLoaded", initializeSlider);
+
+function initializeSlider(){
+    if(slides.length > 0){
+        slides[slideIndex].classList.add("displaySlide");
+        intervalID = setInterval(nextSlide, 5000);
+    }
+    
+}
+
+function showSlide(index){
+
+    if(index >= slides.length){
+        slideIndex = 0;
+
+    }else if(index < 0){
+        slideIndex = slides.length - 1;
+    }
+
+    slides.forEach(slides =>{
+        slides.classList.remove("displaySlide");
+    });
+    slides[slideIndex].classList.add("displaySlide");
+}
+
+function prevSlide(){
+    clearInterval(intervalID);
+    slideIndex--;
+    showSlide(slideIndex);
+}
+
+function nextSlide(){
+    slideIndex++;
+    showSlide(slideIndex);
+}
+
+
+</script>
+<script src="../script/script_index.js"></script>
+
+
+
 </body>
 </html>
