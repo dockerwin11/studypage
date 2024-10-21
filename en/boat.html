@@ -9,16 +9,19 @@
   <meta name="author" content="ERB Yachting Group" />
   <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/boat.css">
+  <link rel="stylesheet" href="../style/flex.css">
   <!-- <link rel="stylesheet" href="../style/dropdown.css"> -->
   <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div class="main-container">
 
     <video class="background-video" type="video/mp4" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="../video/icon.mp4" type="video/mp4"></source>
+      <source src="../video/background-video-3.mp4" type="video/mp4"></source>
     </video>
 
     <nav class="nav-bar">  <!-- language bar to nav bar -->
@@ -30,21 +33,31 @@
 
       <div> <!-- site map -->
         <a href="sitemap.html" class="sitemap-heading" title="sitemap">
-        <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off">
-        <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"></a>
+          <!-- <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off">
+          <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"> -->
+          <i class="fa-solid fa-sitemap" id="mark-1"></i>
+        </a>
       </div>
+
+      <!-- <div>
+        <i class="fa-brands fa-youtube fa-shake" ></i>
+        <i class="fa-solid fa-language" id="mark-1"></i>
+      </div> -->
 
       <div class="language-heading"> <!-- language drop down bar button to language heading -->
         <button class="language-heading-button" title="language-heading-button"> <!-- language to language heading button -->
-          <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off">
-          <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on">
+          <!-- <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off">
+          <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on"> -->
+          <i class="fa-solid fa-language" id="mark-2"></i>
         </button>
         <div class="language-heading-content"> <!-- language bar button content to language heading content-->
           <div class="language-heading-button"><a href="../tc/service.html" title="繁">繁</a></div> <!-- language to language heading button -->
           <div class="language-heading-button"><a href="../sc/service.html" title="簡">簡</a></div> <!-- language to language heading button -->
         </div>
       </div>
-      
+      <div class="erb_heading">
+        <img src="../image/erb_logo2.png" alt="erb-logo" class="erb_logo">
+      </div>
     </nav> <!-- language bar to nav bar -->
 
     <header class="main-title">
@@ -70,157 +83,37 @@
     </nav>
 
     <div class="service-container">
-      <div class="service-event"> <!-- dj-onboard -->
-        <div>
-          <figure class="service-img">
-            <img src="../content/boat/speed_boat/38_surf/38_surf_img1.jpg" alt="38_surf"; class="service-img-resize">
-            <figcaption>38 surf</figcaption>
-          </figure>
-        </div>
-        <div class="service-content">
-          <div>
-            <B>38 surf</B>          
-            <table>
-              <tr>
-                <td>Length: 15m</td>
-                <td>Guest: 10</td>
-                <td>Crew: 2</td>
-              </tr>
-              <tr>
-                <td>Fee:HKD5000.00/day</td>
-                <td>facilities: Cabin</td>
-                <td>Toilet</td>
-              </tr>
-              <tr>
-                <td>Galley</td>
-                <td>Air-Con</td>
-                <td>TV</td>
-              </tr>
-              <tr>
-                <td>WiFi</td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
+      <div class="boat-flex">
+        <div><a href="/en/boat/38-Surf.html" ><img class="boat-img"  src="../image/cover1.png" alt="38 Surf"></a>
+          <div class="boat-name">
+            38 Surf
           </div>
-          <div class="boat-1 boat"></div>
         </div>
-      </div>
-
-      <div class="service-event"> <!-- water-toy -->
-        <div>
-          <figure class="service-img">
-            <img src="../content/water_toy.jpg" alt="water_toy"; class="service-img-resize">
-            <figcaption>Water Toy Service</figcaption>
-          </figure>
-        </div>
-        <div class="service-content">
-          <div>
-            <B>Water Toys Set</B>
-            <p> 
-                Elevate your aquatic adventure with our exclusive add-on option of water toys.
-                Dive into the crystal-clear waters with our top-notch snorkeling equipment, glide across the waves on floating bed,
-                floating board, and enjoy endless laughter with our exciting inflatables. 
-                We also provide fresh towels to ensure your comfort throughout the day. 
-                Whether you're exploring underwater wonders or simply basking in the sun, 
-                our water toys guarantee moments of fun and unforgettable memories for everyone.
-            </p>
+        <div><a href="/en/boat/Regal-LS4.html" ><img class="boat-img"  src="../image/cover2.png" alt="Regal LS4"></a>
+          <div class="boat-name">
+            Regal LS4
           </div>
-          <div class="service-2 service"></div>
         </div>
-      </div>
-
-      <div class="service-event"> <!-- catering-onboard -->
-        <div>
-          <figure id="img-catering-onboard" class="service-img">
-            <img src="../content/catering_onboard.jpg" alt="catering_onboard" class="service-img-resize">
-            <figcaption>Catering Onboard Service</figcaption>
-          </figure>
-        </div>
-        <div class="service-content">
-          <div>
-            <B>Catering Onboard</B>
-            <p> 
-              Immerse yourself in a culinary journey with our onboard catering service.
-              Our yacht buffet experience is bursting with energy, aromas, and flavors, transporting you to the world's local markets.
-              Focusing on both Asian and Western cuisine, our diverse menu offers something for every palate. 
-            </p>
+        <div><a href="/en/boat/Regal-42-Fly.html" ><img class="boat-img"  src="../image/cover3.png" alt="Regal 42 Fly"></a>
+          <div class="boat-name">
+            Regal 42 Fly
           </div>
-          <div class="service-3 service"></div>
         </div>
-      </div>
-
-      <div class="service-event"> <!-- asian-style -->
-        <div>
-          <figure id="img-asian-style" class="service-img">
-            <img src="../content/asian_style.jpg" alt="asian_style" class="service-img-resize">
-            <figcaption>Asian Flavors</figcaption>
-          </figure>
-        </div>
-        <div class="service-content">
-          <div>
-            <B>Asian Flavors</B>
-            <ul> 
-              <li>Sushi Platter</li>
-              <li>Thai Tom Yum Soup</li>
-              <li>Peking Duck</li>
-              <li>Indian Chicken Curry</li>
-              <li>Korean BBQ</li>
-              <li>Vietnamese Spring Rolls</li>
-              <li>Mapo Tofu</li>
-            </ul>
+        <div><a href="/en/boat/Regal-38-Grande.html" ><img class="boat-img"  src="../image/cover4.png" alt="Regal 38 Grande"></a>
+          <div class="boat-name">
+            Regal 38 Grande
           </div>
-          <div class="service-4 service"></div>
         </div>
-      </div>
-
-      <div class="service-event"> <!-- mediterranean-style -->
-        <div>
-          <figure id="img-mediterranean-style" class="service-img">
-            <img src="../content/mediterranean_style.png" alt="mediterranean_style" class="service-img-resize">
-            <figcaption>Mediterranean Style</figcaption>
-          </figure>
-        </div>
-        <div class="service-content">
-          <div>
-            <B>Mediterranean Style</B>
-            <ul> 
-              <li>Greek Salad</li>
-              <li>Spanish Paella</li>
-              <li>Italian Baked Eggplant</li>
-              <li>Moroccan Lamb Stew</li>
-              <li>Turkish Kebab</li>
-              <li>Mediterranean Grilled Fish</li>
-              <li>Sicilian Lemon Cake</li>
-            </ul>
+        <div><a href="/en/boat/Beneteau-Oceanis-60.html" ><img class="boat-img"  src="../image/cover5.png" alt="Beneteau Oceanis 60"></a>
+          <div class="boat-name">
+            Beneteau Oceanis 60
           </div>
-          <div class="service-5 service"></div>
         </div>
-      </div>
-
-      <div class="service-event"> <!-- continental-style -->
-        <div>
-          <figure id="img-continental-style" class="service-img">
-            <img src="../content/continental_style.jpg" alt="continental_style" class="service-img-resize">
-            <figcaption>Continental Style</figcaption>            
-          </figure>
-        </div>
-        <div class="service-content">
-          <div>
-            <B>Continental Style</B>
-            <ul> 
-              <li>Continental Style</li>
-              <li>French Onion Soup</li>
-              <li>Caesar Salad</li>
-              <li>Pan-Seared Foie Gras</li>
-              <li>Grilled Ribeye Steak</li>
-              <li>Creamy Mushroom Pasta</li>
-              <li>Chocolate Lava Cake</li>
-              <li>Tiramisu</li>
-            </ul>
+        <div><a href="/en/boat/Bali-5-8.html" ><img class="boat-img"  src="../image/cover6.png" alt="Bali 5.8"></a>
+          <div class="boat-name">
+            Bali 5.8
           </div>
-          <div class="service-6 service"></div>
-        </div>        
+        </div>
       </div>
     </div> <!-- service container -->
 
@@ -259,7 +152,7 @@
       </div>
     </footer>
     
-    <script src="../js_script/script_service.js"></script>
+    <script src="../js_script/script_logo.js"></script>
 
   </div> <!-- main-container -->
 </body>
