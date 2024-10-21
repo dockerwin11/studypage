@@ -106,6 +106,32 @@ div::-webkit-scrollbar {
 .language-heading-button {
   font-size: 20px;
   margin-bottom: 3px;
+  background-color: transparent;
+}
+
+.erb_logo {
+  margin-left: 10px;
+  width: 60px;
+  height: 40px;
+}
+
+/* font awesome */
+
+#mark-1 {
+  color: yellow;
+  font-size: 40px;
+}
+#mark-1:hover {
+  color: white;
+  font-size: 40px;
+}
+#mark-2 {
+  color: yellow;
+  font-size: 40px;
+}
+#mark-2:hover {
+  color: white;
+  font-size: 40px;
 }
 
 .language-heading button{
@@ -135,7 +161,8 @@ div::-webkit-scrollbar {
 .language-heading .language-heading-content {
   display: none;
   position: relative;
-  background-color: hsl(271, 76%, 69%);
+  /* background-color: hsl(271, 76%, 69%); */
+  background-color: transparent;
   max-width: 40px;
   padding: 0px 2px 0px 2px;
   /* box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8); */
@@ -280,7 +307,7 @@ color: #69fca6;
   top: 180px;
   left: 30px;
   width: 80%;
-  height: 65%;
+  height: 70%;
   border: 1px solid white;
   border-radius: 25px;
 
@@ -413,7 +440,7 @@ color: #69fca6;
 
 .payment-button {
   display: flex;
-  padding-top: 700px; 
+  padding-top: 740px; 
   padding-left: 1500px;
   /* border: 2px solid yellow; */
 }
