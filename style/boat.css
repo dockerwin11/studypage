@@ -1,0 +1,43 @@
+.boat-img{
+    border: 5px solid white;
+}
+
+.boat-container{
+    display: flex; flex-wrap: wrap; gap: 50px;
+}
+.boat-38-Surf-img{
+    max-width: 600px; border: 5px solid white;
+}
+.boat-bali-img{
+    max-width: 600px; border: 5px solid white;
+}
+
+.boat-oceanis60-img{
+    max-width: 600px; border: 5px solid white;
+}
+
+.boat-38-grande-img{
+    max-width: 600px; border: 5px solid white;
+}
+
+.boat-42-fly-img{
+    max-width: 600px; border: 5px solid white;
+}
+
+.boat-regal-LS4-img{
+    max-width: 600px; border: 5px solid white;
+}
+
+.boat-information-container{
+    max-width: 500px; text-align: left; padding-left: 200px;
+}
+.boat-information-h2{
+    font-size: 2rem;margin-top: 0px;
+}
+.boat-information-p{
+    margin-top: 3px; font-size: 1.5em;
+}
+
+.boat-name{
+    font-family: Arial, Helvetica, sans-serif; font-size: 2.5rem;
+}
