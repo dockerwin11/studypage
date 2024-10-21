@@ -12,12 +12,13 @@
   <!-- <link rel="stylesheet" href="../style/dropdown.css"> -->
   <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div class="main-container">
 
-    <video class="background-video" controls preload="true" autoplay loop muted>
+    <video class="background-video" type="video/mp4" autoplay="autoplay" muted="muted" loop="loop">
       <source src="../video/icon_2.mp4" type="video/mp4"></source>
     </video>
 
@@ -30,21 +31,26 @@
 
       <div> <!-- site map -->
         <a href="sitemap.html" class="sitemap-heading" title="sitemap">
-        <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off">
-        <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"></a>
+          <!-- <img src="../image/sitemap_off.png" alt="sitemap-off" class="sitemap-heading-img-off"> -->
+          <!-- <img src="../image/sitemap_on.png" alt="sitemap-on" class="sitemap-heading-img-on"> -->
+          <i class="fa-solid fa-sitemap" id="mark-1"></i>
+        </a>
       </div>
 
       <div class="language-heading"> <!-- language drop down bar button to language heading -->
         <button class="language-heading-button" title="language-heading-button"> <!-- language to language heading button -->
-          <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off">
-          <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on">
+          <!-- <img src="../image/lang_off.png" alt="language-off" class="language-heading-img-off"> -->
+          <!-- <img src="../image/lang_on.png" alt="language-on" class="language-heading-img-on"> -->
+          <i class="fa-solid fa-language" id="mark-2"></i>
         </button>
         <div class="language-heading-content"> <!-- language bar button content to language heading content-->
           <div class="language-heading-button"><a href="../tc/service.html" title="繁">繁</a></div> <!-- language to language heading button -->
           <div class="language-heading-button"><a href="../sc/service.html" title="簡">簡</a></div> <!-- language to language heading button -->
         </div>
       </div>
-      
+      <div class="erb_heading">
+        <img src="../image/erb_logo2.png" alt="erb-logo" class="erb_logo">
+      </div>
     </nav> <!-- language bar to nav bar -->
 
     <header class="main-title">
@@ -244,6 +250,7 @@
     </footer>
     
     <script src="../js_script/script_service.js"></script>
+    <script src="../js_script/script_logo.js"></script>
 
   </div> <!-- main-container -->
 </body>
