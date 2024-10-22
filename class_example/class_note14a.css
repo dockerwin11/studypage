@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;    
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+p {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 0.3rem 0;
+}
