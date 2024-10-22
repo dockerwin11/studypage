@@ -36,10 +36,11 @@ div::-webkit-scrollbar {
   text-decoration: none;
   height: 55px;
   cursor: pointer;
+  margin-right: 1350px;
 }
 
 .boat-heading-img {
-  width: 55px;
+  width: 100px;
   height: 55px;
   /* margin-bottom: -15px; */
   /* padding-right: 15px; */
