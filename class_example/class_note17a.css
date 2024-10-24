@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 1200px) {
+    .widescreen {
+         background: orange;
+    }
+}
+
+@media (max-width: 992px) {
+    .widescreen {
+        background: blue;
+    }
+   .normal {
+        background: lightblue;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .ipad {
+        background: lightgreen;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .phone {
+        background: orange;
+    }
+    
+}
+
+@media (orientation: landscape) {
+    .landscape {
+        background: lightcyan;
+    }
+    
+}
+
+@media (max-height: 500px) {
+    .height {
+        background: red;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background: #333;
+    }
+}

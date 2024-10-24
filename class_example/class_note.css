@@ -130,3 +130,16 @@ i {
     color: green;
     margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 40px 50px;
+    }
+    .container {
+        margin: 4rem;
+        
+    }
+}
+

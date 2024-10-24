@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background: orange;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.container h1 {
+    font-size: 7vw;
+}
+
+.container p {
+    overflow: hidden;
+}
