@@ -1,0 +1,38 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul li:first-child {
+    background-color: aqua;
+}
+
+ul li:last-child {
+    background-color: blue;
+}
+
+ul li:nth-child(odd) {
+    background-color: yellow;
+}
+
+ul li:nth-child(even) {
+    background-color: red;
+}
+
+ul li:nth-child(4) {
+    color: rgb(42,165,71);
+}
+
+ul li:nth-child(3n+1) {
+    background-color: rgb(144, 42, 165);
+}
+
+p i:only-child {
+    background: black;
+    color: white;
+}

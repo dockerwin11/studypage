@@ -60,4 +60,3 @@ console.log(reduce((a,b)=>a+b,aa));
 
 result = a.reduce((a,b) => a > b ? a: b);
 console.log(result);
-

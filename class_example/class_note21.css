@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 2rem;
+}
+
+
+/* direct child of container */
+.container > p {
+    font-weight: bold;
+}
+
+.container > ul {
+    list-style: none;
+}
+
+.container > a {
+    color: red;
+}
+
+/* a direct sibling of h1 with both of them are children of container */
+.container h1 + a {
+    color: green;
+}
+
+/* all sibling after h1 and all of them are children of container */
+.container h1 ~ a {
+    color: purple;
+}
+
+.container > ul ~ div {
+    background: blue;
+}

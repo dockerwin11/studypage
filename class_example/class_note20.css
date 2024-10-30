@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;   
+}
+
+.container{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+.form-group{
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* select by attribute */
+input[type="email"] {
+    border-color: green;
+}
+
+input[name="name"] {
+    border-color: blue;
+}
+
+input[type="text"][id="name"] {
+    background: lightblue;
+}
+
+input[required] {
+    border-color: red;
+}
+
+input[disabled][type="text"][id="name"] {
+    background-color: #ccc;
+}
+
+input[type="password"][maxlength="8"] {
+    background: green;
+}
+
+button[type="submit"] {
+    background: purple;
+}
+
+a[href^="#"] {
+    color: yellow;
+}
+
+a[href$=".com"] {
+    color: rgb(246,14,14);
+}
+
+a[href*="goo"] {
+    text-decoration: underline;
+}

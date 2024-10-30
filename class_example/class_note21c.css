@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul li:first-of-type {
+    font-weight: bold;
+}
+
+ul li:last-of-type {
+    font-weight: bold;
+}
+
+ul li:nth-of-type(3) {
+    color: green;
+}
+
+ul li:nth-of-type(odd) {
+    background: lightcoral;
+}
+
+p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+p:nth-child(2) {
+    color: red;
+}
+
+.container > p:first-of-type::first-letter {
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+/* won't work 
+.container > p::first-line:first-of-type {
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+} */
