@@ -26,3 +26,9 @@ clearBtn.addEventListener("mouseup", onMouseUp);
 
 const onMouseWheel = () => console.log("mouse wheel");
 clearBtn.addEventListener("wheel", onMouseWheel);
+
+const onMouseOver = () => console.log("mouse over");
+clearBtn.addEventListener("mouseover", onMouseOver);
+
+const onMouseOut = () => console.log("mouse out");
+clearBtn.addEventListener("mouseout", onMouseOut);
