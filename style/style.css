@@ -59,7 +59,7 @@ div::-webkit-scrollbar {
   /* float: left; */
   /* margin-right: 0px; */
   /* background-color: red; */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .boat-heading {
@@ -197,7 +197,7 @@ div::-webkit-scrollbar {
   text-decoration: none;
   text-align: right;
   width: 20px;
-  margin-left: 25px;
+  margin-left: 25px;  
   /* border: 1px solid yellow; */
 }
 
@@ -215,7 +215,9 @@ div::-webkit-scrollbar {
   /* background-color: hsl(271, 76%, 69%); */
   background-color: transparent;
   /* width: 40px; */
+
   padding: 0px 2px 0px 2px;
+  
   /* box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8); */
 }
 
@@ -255,6 +257,7 @@ div::-webkit-scrollbar {
   top: 50px;
   height: 30px;
   width: 100%;
+  z-index: 2;
   /* border: 1px solid yellow;  */
 }
 
@@ -306,6 +309,7 @@ color: #69fca6;
 .menu-drop-down-button .menu-drop-down-button-content {
   display: none;
   position: absolute;
+  z-index: 1;
   /* background-color: #ffd900; */
   /* min-width: 90px; */
   box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
@@ -350,89 +354,93 @@ color: #69fca6;
 }
 
 .service-container {
-  position: fixed;
-  top: 180px;
-  left: 30px;
-  width: 80%;
+  position: absolute;
+  top: 150px;
+  width: 100%;
   height: 70%;
-  border: 1px solid white;
-  border-radius: 25px;
+  /* border: 1px solid white; */
+  /* border-radius: 25px; */
 
   /* display: grid; */
   background: transparent;
   color: white;
-  padding: 15px;
+  padding: 10px 150px 0px 50px;
   overflow-y: scroll; 
+  z-index: 0;
 }
 
 .service-event {
   display: flex;
   font-size: 16px;
+  width: 100%;
+  height: 50%;
   /* justify-content: space-evenly;
   top: 400px;
   left: 10px;
   width: 1570px;
   height: 30px; */
-  /* border: 2px solid yellow; */
+  /* border: 1px solid yellow; */
 }
 
 .service-img {
   margin-bottom: 20px;
+  width: 200px;
+  /* height: 50%; */
   /* float:left;
   margin-inline: 0px;
   margin-block: 0px;
   text-align:left; */
-  /* border: 2px solid yellow; */
+  /* border: 1px solid yellow; */
 }
 
 .service-img-resize { 
-  width: 200px;  
-  height: 200px;
-  /* border: 2px solid white; */
+  width: 100%;  
+  height: 100%;
+  /* border: 1px solid white; */
   /* Ensures images maintain aspect ratio and fill the container */ 
-  /* object-fit: cover;  */
+  object-fit: cover; 
 }
 
 .service-content {
   display: flex;
-  width: 1100px;
+  width: 100%;
   padding: 20px 10px 0px 10px;
-  /* border: 2px solid white; */
+  /* border: 1px solid white; */
 }
 
 .service-content p {
-  padding: 10px 0px 20px 0px;
-  width: 900px;
+  padding: 10px 5px 20px 0px;
+  width: 100%;
   /* border: 2px solid white; */
 }
 
-.service-content table {
+/* .service-content table {
   padding: 10px 0px 20px 0px;
   width: 450px;
-  border: 2px solid white;
-}
+  border: 11px solid white;
+} */
 
-.service-content table td {
+/* .service-content table td {
   text-align: left;
-  width: 110px;
-  border: 1px solid white;
-}
+  width: 110px; */
+  /* border: 1px solid white; */
+/* } */
 
-.boat {
+/* .boat {
   height: 150px;
-  width: 150px;
-  border: 2px solid white;
-}
+  width: 150px; */
+  /* border: 2px solid white; */
+/* } */
 
 /* table here */
 
 .service {
-  height: 150px;
-  /* border: 2px solid white; */
+  height: 150px;margin-left: auto;
+  /* border: 12px solid white; */
 }
 
 .service-content ul {
-  width: 900px;
+  width: 100%;
   padding: 10px 0px 20px 20px;
   /* border: 2px solid white; */
 }
@@ -453,6 +461,7 @@ color: #69fca6;
   font-size: 14px;
   width: 100px;
   margin-top: 10px;
+  /* border: 11px solid yellow; */
 }
 
 .service-button:hover {
@@ -480,7 +489,7 @@ color: #69fca6;
   height: 20px;
   padding-top: 2px;
   padding-left: 5px;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 /* preview invoice container */
@@ -488,12 +497,15 @@ color: #69fca6;
 .payment-button {
   position: absolute;
   display: flex;
-  bottom: 80px;
+  bottom: 68px;
   right: 30px;
   /* padding-top: 740px; 
   padding-left: 1500px; */
   /* border: 2px solid yellow; */
 }
+
+
+
 
 .payment-button-reset {
   background-color: #ffd84d;
@@ -503,8 +515,8 @@ color: #69fca6;
   transition: 0.1s ease-in-out;
   font-weight: 700;
   font-size: 14px;
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
   margin-right: 30px;
   /* border: 2px solid white;                  */
 }
@@ -516,7 +528,12 @@ color: #69fca6;
 .payment-button-reset:active {
   transform: translateY(2px);
 }
-
+@media (max-width: 400px){
+  .payment-button-reset{
+      font-size: 4px;
+      background-color: blue;
+  }
+}
 .payment-button-paid {
   background-color: #ffd84d;
   color: rgb(60, 60, 60);
@@ -525,8 +542,8 @@ color: #69fca6;
   transition: 0.1s ease-in-out;
   font-weight: 700;
   font-size: 14px;
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
   /* border: 2px solid white; */
 }
 
@@ -540,12 +557,12 @@ color: #69fca6;
 
 .main-footer { 
   position: absolute;
-  top: 800px;
+  bottom: 10px;
   width: 100%;
   text-align:center;
   /* background-color:#FFA500; */
   /* clear:both; */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   
 }
 
@@ -556,7 +573,8 @@ color: #69fca6;
 
 .main-footer-images {
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
+  justify-content: center;
   /* margin-top: 10px;
   margin-left: 72px;
   margin-right: 85px; */
@@ -566,23 +584,15 @@ color: #69fca6;
 }
 
 .footer-image img {
-  max-width: 88px;
-  max-height: 31px;
-  margin-left: 10px;
-  /* flex: 1; */
-  /* border: 2px solid blue; */
-}
-
-.footer-image img {
-  max-width: 88px;
-  max-height: 31px;
+  width: 88px;
+  height: 31px;
   margin-left: 10px;
   /* flex: 1; */
   /* border: 2px solid blue; */
 }
 
 .hklogo img {
-  max-width: 106px;
+  width: 88px;
   background-color: white;
 }
 

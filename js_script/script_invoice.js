@@ -21,4 +21,6 @@ window.onload = function() {
     output.innerHTML = total_value;
 };
 
-
+function openTab() {
+    window.open("invoice.html", "_blank");
+}

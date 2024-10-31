@@ -51,6 +51,10 @@
 //    }
 // }
 
+function openTab() {
+  window.open("invoice.html", "_blank");
+}
+
 const products = [
     { name: "DJ onboard", price: 2500, id: 1, quantity: 1,},
     { name: "water-toy", price: 1200, id: 2, quantity: 1,},
@@ -67,7 +71,7 @@ let cart = [];
 //                   <button class="service-button" id=${product.id}>Add to Cart</button>`);
 
 const productsHTML = products.map(
-    (product) => `<strong>$${product.price}</strong>
+    (product) => `<strong>$${product.price}</strong><br>
                   <button class="service-button" id=${product.id}>Add to Cart</button>
                   <div class="mid-${product.id} unit">
                     <button onclick={decrItem(${product.id})}>-</button>
