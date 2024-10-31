@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="js_temp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <header><h1 id="app-title" class="btn">Shopping List</h1> -->
+            <header><h1 id="app-title">Shopping List</h1>
+        <!-- <img width="20" height="20" src="image.jpg"> -->
+    <!-- <a href="https://www.google.com" id="google" class="google btn">google</a> -->
+</header>
+        <form id="item-form">
+            <div class="form-control">
+                <input 
+                 type="text"
+                 class="form-input" 
+                 id="item-input" 
+                 name="item" 
+                 placeholder="Enter item" 
+                 />
+            </div>
+            <div class="form-control">
+                <button type="submit" class="btn">
+                 <i class="fa-solid fa-plus"></i>Add item
+            </button>
+        </div>
+        </form>
+        <div class="filter">
+            <input 
+             type="text" 
+             class="form-input-filter" 
+             id="filter" 
+             placeholder="filter items"
+             />
+        </div>
+        <ul id="item-list" class="items">
+            <li class="item">Apple
+                <!-- <button class="remove-item btn-link text-red"> -->
+                    <button class=" btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="item">Orange
+                <!-- <button class="remove-item btn-link text-red"> -->
+                    <button class="btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="item">Banana
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="item">Milk
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+        </ul>
+        <button class="btn-clear" id="clear">Clear all</button>
+    </div>
+    <!-- <script src="js_temp.js"></script> -->
+    <!-- <script src="js_single_element.js"></script> -->
+    <!-- <script src="js_multi_elements.js"></script> -->
+     <!-- <script src="js_multi_elements_v2.js"></script> -->
+    <!-- <script src="traversing_node.js"></script> -->
+     <!-- <script src="create_element.js"></script> -->
+      <!-- <script src="create_item.js"></script> -->
+    <!-- <script src="refactor_create_item.js"></script> -->
+     <!-- <script src="insert_element.js"></script> -->
+      <!-- <script src="replace_element.js"></script> -->
+      <!-- <script src="remove_element.js"></script> -->
+      <!-- <script src="style_class.js"></script> -->
+       <script src="event_listener.js"></script>
+    </body>
+</html>
