@@ -32,3 +32,13 @@ clearBtn.addEventListener("mouseover", onMouseOver);
 
 const onMouseOut = () => console.log("mouse out");
 clearBtn.addEventListener("mouseout", onMouseOut);
+
+const onDragStart = () => console.log("drag start");
+clearBtn.addEventListener("dragstart", onDragStart);
+
+const onDrag = () => console.log("drag");
+clearBtn.addEventListener("drag", onDrag);
+
+const onDragEnd = () => console.log("drag end");
+clearBtn.addEventListener("dragend", onDragEnd);
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="class_note21g.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="app-title">Shopping List</h1>
+            <!-- <img src="/class_example/flash.png" width="20" height="20">
+            <a href="https://www.google.com" id="google" class="google btn">google</a> -->
+            <!-- <a href="https://www.google.com" id="google1" class="google btn">google</a> -->
+        </header>
+
+        <form id="item-form">
+            <div class="form-control">
+                <input type="text" class="form-input" id="item-input" name="item" placeholder="Enter item">
+            </div>
+            <div class="form-control">
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-plus"></i>Add Item
+                </button>
+            </div>
+        </form>
+        <div class="filter">
+            <input type="text" class="form-input-filter" id="filter" placeholder="filter items">
+        </div>
+        <ul id="item-list" class="items">
+            <li class="item">Apple
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="item">orange
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="item">banana
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="item">milk
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+        </ul>
+        <button class="btn-clear" id="clear">Clear all</button>
+    </div>
+    <script src="class_note23b.js"></script>
+</body>
+</html>
