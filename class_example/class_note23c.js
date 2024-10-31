@@ -32,3 +32,4 @@ function onblur(e) {
 }
 
 itemInput.addEventListener("blur", onblur);
+priorityInput.addEventListener("change", onInput);
