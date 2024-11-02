@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <div id="root">not rendered</div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script>
+        
+        const Node = (props) => {
+            return React.createElement("div", null, [
+                React.createElement("h1", null, props.name),
+                React.createElement("p", null, props.content)
+            ]);
+        }
+        const App = () => {
+            return React.createElement("div", {}, [
+                React.createElement(Node, {name: "John", content: "hello"}),
+                React.createElement(Node, {name: "Ryan", content: "world"})
+            ]);
+        }
+        const container = document.getElementById("root");
+        // console.log(container);
+        const root = ReactDOM.createRoot(container);
+        root.render(React.createElement(App));
+
+    </script>
+</body>
+</html>
