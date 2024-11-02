@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    margin: 130px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.8s ease-in-out 0.5s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    color: yellow;
+    width: 400px;
+    border-radius: 50px;
+    opacity: 0.5;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);   
+}
+
+.logo {
+    position: absolute;
+    max-width: 40%;
+    transform: translate(-25%,-25%);
+    /* transition: all 0.5s; */
+    border: 1px solid red;
+}
+
+.logo:hover {
+    /* transform: rotateY(-360deg) rotateX(-360deg); */
+    /* transform: translateX(-200px);
+    transform: translateY(200px);
+    transform: translate(200px, 200px);
+    transform: skew(-30deg);
+    transform: scale(1.5); */
+    /* transform: translateY(200px) rotate(9000deg) scale(2) translateX(-200px); */
+}
