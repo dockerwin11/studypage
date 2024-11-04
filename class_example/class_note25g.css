@@ -7,6 +7,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     overflow-x: hidden;
+   
 }
 
 a {
@@ -62,7 +63,7 @@ img {
     left: 0;
     width: 100%;
     background: rgba(154, 192, 204, 0.5);
-    text-align: center;
+    text-align: center;                 /* x-axis */
     transition: transform 0.3s ease;
     transform: translateY(100%);
 }
@@ -82,7 +83,7 @@ img {
 }
 
 .navbar .mobile-menu-items.active {
-    transform: translateX(0);
+    transform: translateX(0%);
 }
 
 .navbar .mobile-menu {
