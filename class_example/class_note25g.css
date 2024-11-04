@@ -64,7 +64,7 @@ img {
     background: rgba(154, 192, 204, 0.5);
     text-align: center;
     transition: transform 0.3s ease;
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 
 .navbar .mobile-menu-list {
