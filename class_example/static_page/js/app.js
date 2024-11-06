@@ -1,8 +1,12 @@
-const navBtn = document.getElementById("nav-toggle");
+const navBtn = document.getElementById("nav-mobile-toggle");
 const navLinks = document.getElementById("mobile-nav-list");
 
-console.log(navLinks);
+
 navBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
 });
+
+// add date
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
