@@ -34,6 +34,7 @@
         --radius: 0.5rem;
         --light-shadow: 0 5px 15px rgba(0,0,0,0.1);
         --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        /* --navbar-Height: 4rem; * //*try */
     }
     
 /* =================
@@ -87,11 +88,11 @@
     }
     .section-title h2 {
         text-transform: uppercase;
-        color: var(--clr-primary-6);
+        color: var(--clr-primary-9);
     }
     
     .section-title span {
-        color: var(--clr-primary-4);
+        color: var(--clr-primary-6);
     }
     .section-center {
         width: 90vw;
@@ -223,7 +224,7 @@
         .section-center.featured-center{
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            /* gap: 8px; */
             max-width: 1170px;
             justify-content: space-between;
         }
@@ -289,7 +290,7 @@
         .section-center.featured-center{
             display: flex;
             flex-direction: column;
-            max-width: 1170px;
+            /* max-width: 1170px; */
     
         }
 
@@ -313,7 +314,7 @@
         .tour-img-container{
             flex: 1 0 30%;
             position: relative;
-            height: 13rem;
+            height: calc(100vh - 4rem - 12rem);
         }
 
         .tour-img{
@@ -324,7 +325,7 @@
         .tour-date{
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: 5px;
             background: var(--clr-primary-3);
             color: var(--clr-gray-9);
             text-transform: capitalize;
@@ -456,7 +457,7 @@
     .nav-icon {
         font-size: 1.3rem;
         margin: 5px;
-        color: var(--clr-primary-5);
+        color: var(--clr-primary-8);
     }
     
     .nav-icon:hover {
@@ -488,9 +489,9 @@
         cursor: pointer;
     }
     
-    .mobile-nav-list.active {
+    /* .mobile-nav-list.active {
         transform: translateX(0);
-    }
+    } */
 
     @media (min-width: 768px) {
         .nav-mobile {
@@ -514,7 +515,7 @@
         }
 
         .fa-bars {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             width: 100%;
             color: var(--clr-primary-6);
         }
@@ -528,30 +529,44 @@
         }
 
         .mobile-nav-list {
-            position: absolute;
+            position: fixed;
+            top:4rem;
+            right: -100%;
+            width: 100%;
+            height: calc(100vh - 4rem);
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100%;
+            /* height: 100%; */
             padding-top: 30px;
             gap: 2rem;
             font-size: 1.2rem;
-            margin-top: 4rem;
+            /* margin-top: 4rem; */
             text-align: center;
+            transition: var(--transition);
+            transform: translateX(100%);
         }
 
         .mobile-nav-list.active {
-            transform: translateX(100%);
-            position: absolute;
-            top: 80px;
+            /* transform: translateX(100%); */
+            position: fixed;
+            top: 4rem;
+            transform: translateX(0);
             bottom: 0;
-            left: 0;
+            right: 0;
             width: 100%;
-            background: var(--clr-primary-1);
+            background: var(--clr-primary-2);
             text-align: center;
             display: flex;
             flex-direction: flex-column;
             align-items: center;
+            opacity: 0.6;
+        }
+        .mobile-nav-link:hover{
+            display: block;
+            color: var(--clr-primary-9);
+            background: var(--clr-primary-5);
+            cursor: pointer;
         }
     }
         
@@ -569,7 +584,7 @@
             display: flex;
             height: 85vh;
             width: 98vw;
-            width: 100%;
+            /* width: 100%; */
             background: linear-gradient(var(--clr-primary-6), rgba(0, 0, 0, 0.7)), url("/class_example/static_page/images/about-us.jpg") center/cover no-repeat;
             margin-top: 4rem;
         }
@@ -598,7 +613,7 @@
         .btn {
             text-transform: uppercase;
             background: var(--clr-primary-5);
-            color: var(--clr-white);
+            /* color: var(--clr-white); */
             padding: 0.375rem 0.75rem;
             letter-spacing: var(--spacing);
             display: inline-block;
