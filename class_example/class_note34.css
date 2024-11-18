@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.b1 {
+    background: red;
+}
+
+.b2 {
+    background: blue;
+}
+
+.b3 {
+    background: green;
+    clear: both;
+}
+
+.b4 {
+    background: yellow;
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+p {
+    border: 1px solid blue;
+}
